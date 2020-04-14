@@ -1,0 +1,1494 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\WMC_Assignment_2.X.debug.obj
+cinit CODE 0 E600 E600 3A 1
+text0 CODE 0 E478 E478 24 1
+text1 CODE 0 EA1A EA1A 7A 1
+text2 CODE 0 F55C F55C 216 1
+text3 CODE 0 F196 F196 10C 1
+text4 CODE 0 E9B0 E9B0 6A 1
+text5 CODE 0 FA9E FA9E 452 1
+text6 CODE 0 E890 E890 5C 1
+text7 CODE 0 EE00 EE00 C8 1
+text8 CODE 0 E740 E740 46 1
+text9 CODE 0 E6FE E6FE 42 1
+text10 CODE 0 E8EC E8EC 5E 1
+text11 CODE 0 E56A E56A 2C 1
+text12 CODE 0 E540 E540 2A 1
+text13 CODE 0 EA94 EA94 80 1
+text14 CODE 0 E516 E516 2A 1
+text15 CODE 0 E6BC E6BC 42 1
+text16 CODE 0 ECAE ECAE A4 1
+text17 CODE 0 E67A E67A 42 1
+text18 CODE 0 E786 E786 52 1
+text19 CODE 0 E404 E404 E 1
+text20 CODE 0 E3F6 E3F6 E 1
+text21 CODE 0 EB96 EB96 88 1
+text22 CODE 0 E596 E596 34 1
+text23 CODE 0 E454 E454 24 1
+text24 CODE 0 EEC8 EEC8 E6 1
+text25 CODE 0 E3E8 E3E8 E 1
+text26 CODE 0 F2A2 F2A2 10E 1
+text27 CODE 0 F772 F772 32C 1
+text28 CODE 0 E412 E412 1E 1
+text29 CODE 0 E49C E49C 26 1
+text30 CODE 0 E94A E94A 66 1
+text31 CODE 0 EB14 EB14 82 1
+text32 CODE 0 E834 E834 5C 1
+text33 CODE 0 F0A2 F0A2 F4 1
+text34 CODE 0 E63A E63A 40 1
+text35 CODE 0 F3B0 F3B0 1AC 1
+text36 CODE 0 E430 E430 24 1
+text37 CODE 0 EFAE EFAE F4 1
+text38 CODE 0 ED52 ED52 AE 1
+text39 CODE 0 EC1E EC1E 90 1
+text40 CODE 0 E7D8 E7D8 5C 1
+text41 CODE 0 E4EC E4EC 2A 1
+text42 CODE 0 E3D2 E3D2 8 1
+text43 CODE 0 E5CA E5CA 36 1
+text44 CODE 0 E4C2 E4C2 2A 1
+text45 CODE 0 E3DA E3DA E 1
+idataCOMRAM CODE 0 E3D0 E3D0 2 1
+cstackCOMRAM COMRAM 1 1 1 59 1
+cstackBANK0 BANK0 1 80 80 50 1
+bssBANK0 BANK0 1 D0 D0 23 1
+dataCOMRAM COMRAM 1 71 71 2 1
+bssCOMRAM COMRAM 1 5A 5A 17 1
+mediumconst MEDIUMCONST 0 FEF0 FEF0 110 1
+$C:\Users\karem\AppData\Local\Temp\s8q4.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM F3-F7F 1
+SFR F80-FFF 1
+BANK0 F3-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-E3CF 1
+STACK F3-F7F 1
+SMALLCONST 1000-E3CF 1
+CODE 4-E3CF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-F7F 1
+BIGRAM 73-7F 1
+BIGRAM F3-F7F 1
+COMRAM 73-7F 1
+EEDATA F00000-F003FF 1
+MEDIUMCONST 1000-E3CF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\WMC_Assignment_2.X.debug.obj
+E3DA text45 CODE >109:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E3DA text45 CODE >111:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E3DE text45 CODE >112:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E3E2 text45 CODE >113:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E3E6 text45 CODE >114:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4C2 text44 CODE >93:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4C2 text44 CODE >95:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4C6 text44 CODE >96:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4CA text44 CODE >97:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4CE text44 CODE >98:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4D2 text44 CODE >99:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4D6 text44 CODE >101:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4DA text44 CODE >102:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4DE text44 CODE >103:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4E2 text44 CODE >104:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4E6 text44 CODE >105:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E4EA text44 CODE >106:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E5CA text43 CODE >26:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5CA text43 CODE >31:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5D4 text43 CODE >34:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5E0 text43 CODE >35:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5E0 text43 CODE >37:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5E2 text43 CODE >38:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5E4 text43 CODE >39:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5E6 text43 CODE >40:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5E8 text43 CODE >41:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5EA text43 CODE >34:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E5EE text43 CODE >31:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\atraso.c
+E3D2 text42 CODE >30:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E3D4 text42 CODE >32:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E3D8 text42 CODE >33:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E4EC text41 CODE >35:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E4EE text41 CODE >37:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E4F0 text41 CODE >38:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E4F6 text41 CODE >39:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E4F8 text41 CODE >40:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E504 text41 CODE >41:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E506 text41 CODE >42:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E512 text41 CODE >43:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E514 text41 CODE >44:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E7D8 text40 CODE >57:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E7D8 text40 CODE >59:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E7DA text40 CODE >60:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E7DC text40 CODE >61:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E7E8 text40 CODE >62:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E7EA text40 CODE >64:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E7F0 text40 CODE >65:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E7FC text40 CODE >66:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E802 text40 CODE >67:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E80E text40 CODE >68:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E814 text40 CODE >69:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E81A text40 CODE >70:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E820 text40 CODE >71:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E826 text40 CODE >72:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E82C text40 CODE >73:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E832 text40 CODE >74:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+EC1E text39 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftge.c
+EC1E text39 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftge.c
+EC22 text39 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftge.c
+EC4E text39 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftge.c
+EC52 text39 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftge.c
+EC7E text39 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftge.c
+EC8A text39 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftge.c
+EC96 text39 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftge.c
+ED52 text38 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+ED52 text38 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+ED62 text38 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+ED70 text38 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+ED72 text38 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+ED7A text38 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+ED98 text38 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+ED9A text38 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDA6 text38 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDAE text38 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDCC text38 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDCE text38 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDD6 text38 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDE0 text38 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDE2 text38 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDE4 text38 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDE8 text38 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDEC text38 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDF0 text38 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EDF2 text38 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EFAE text37 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+EFAE text37 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+EFC8 text37 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+EFD6 text37 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+EFF0 text37 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+EFFE text37 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F004 text37 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F008 text37 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F00C text37 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F010 text37 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F012 text37 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F014 text37 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F020 text37 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F02C text37 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F030 text37 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F034 text37 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F040 text37 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F048 text37 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F050 text37 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F054 text37 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F058 text37 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F05C text37 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F068 text37 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F070 text37 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F078 text37 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+F07C text37 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+E430 text36 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftneg.c
+E430 text36 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftneg.c
+E43A text36 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftneg.c
+E446 text36 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftneg.c
+E452 text36 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftneg.c
+F3B0 text35 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F3B0 text35 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F3C4 text35 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F3D8 text35 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F3F4 text35 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F402 text35 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F41E text35 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F42C text35 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F430 text35 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F432 text35 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F434 text35 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F436 text35 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F438 text35 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F43A text35 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F446 text35 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F448 text35 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F454 text35 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F45C text35 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F464 text35 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F466 text35 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F47E text35 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F486 text35 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F488 text35 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F492 text35 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F49A text35 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4A2 text35 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4A4 text35 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4BC text35 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4C4 text35 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4C6 text35 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4CE text35 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4D2 text35 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4DE text35 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4EA text35 CODE >133:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4EA text35 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4EE text35 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F4FA text35 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F506 text35 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F50A text35 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F516 text35 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F51A text35 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F526 text35 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F532 text35 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+F536 text35 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+E63A text34 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+E63A text34 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+E644 text34 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+E650 text34 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+F0A2 text33 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F0A2 text33 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F0BC text33 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F0CE text33 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F0F4 text33 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F0F6 text33 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F102 text33 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F110 text33 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F114 text33 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F118 text33 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F122 text33 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F134 text33 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F13E text33 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F142 text33 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F144 text33 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F14A text33 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F15C text33 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F166 text33 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F168 text33 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F16E text33 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F174 text33 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+F184 text33 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+E834 text32 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lltoft.c
+E834 text32 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lltoft.c
+E838 text32 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lltoft.c
+E83A text32 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lltoft.c
+E844 text32 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lltoft.c
+E846 text32 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lltoft.c
+E86A text32 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lltoft.c
+EB14 text31 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB14 text31 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB24 text31 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB30 text31 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB34 text31 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB36 text31 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB40 text31 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB42 text31 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB46 text31 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB50 text31 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB64 text31 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB74 text31 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB76 text31 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB80 text31 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB84 text31 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB84 text31 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+EB94 text31 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+E94A text30 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E94A text30 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E956 text30 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E95A text30 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E95C text30 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E966 text30 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E968 text30 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E96C text30 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E980 text30 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E990 text30 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E99A text30 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E99E text30 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E99E text30 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E9AE text30 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\llmod.c
+E49C text29 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+E49C text29 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+E4A8 text29 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+E4B0 text29 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+E4B8 text29 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+E412 text28 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\isdigit.c
+E414 text28 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\isdigit.c
+F772 text27 CODE >492:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F772 text27 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F77A text27 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F77C text27 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F784 text27 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F794 text27 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F796 text27 CODE >546:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F79E text27 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F7A2 text27 CODE >597:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F7B6 text27 CODE >598:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F7BE text27 CODE >600:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F7DA text27 CODE >601:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F806 text27 CODE >602:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F81A text27 CODE >611:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F82C text27 CODE >613:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F830 text27 CODE >621:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F838 text27 CODE >622:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F83A text27 CODE >623:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F870 text27 CODE >622:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F886 text27 CODE >626:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F88E text27 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F890 text27 CODE >643:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F892 text27 CODE >644:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F894 text27 CODE >818:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F898 text27 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F89A text27 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F8C2 text27 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F8C2 text27 CODE >1281:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F8C6 text27 CODE >1282:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F8E2 text27 CODE >1286:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F906 text27 CODE >1290:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F91A text27 CODE >1291:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F91E text27 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F92A text27 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F956 text27 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F95A text27 CODE >1339:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F970 text27 CODE >1340:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F976 text27 CODE >1341:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F98C text27 CODE >1342:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F996 text27 CODE >1381:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F9AC text27 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F9BA text27 CODE >1384:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F9C2 text27 CODE >1428:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F9CA text27 CODE >1430:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F9DA text27 CODE >1431:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F9E2 text27 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+FA58 text27 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+FA68 text27 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+FA78 text27 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+FA90 text27 CODE >1538:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+F2A2 text26 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F2A2 text26 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F2AA text26 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F2AE text26 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F2BE text26 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F2DA text26 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F2FA text26 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F336 text26 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F372 text26 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+F3A6 text26 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftoa.c
+E3E8 text25 CODE >183:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E3EA text25 CODE >185:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E3F4 text25 CODE >186:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EEC8 text24 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EEC8 text24 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EEE2 text24 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EEF0 text24 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF0A text24 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF18 text24 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF24 text24 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF2A text24 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF2E text24 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF32 text24 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF36 text24 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF38 text24 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF44 text24 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF46 text24 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF52 text24 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF56 text24 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF5E text24 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF6E text24 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF7A text24 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF7C text24 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF7C text24 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF84 text24 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+EF88 text24 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+E454 text23 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwtoft.c
+E454 text23 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwtoft.c
+E596 text22 CODE >116:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E598 text22 CODE >119:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E5A2 text22 CODE >121:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E5A4 text22 CODE >122:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E5A8 text22 CODE >123:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E5AE text22 CODE >124:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E5C0 text22 CODE >125:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EB96 text21 CODE >129:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EB96 text21 CODE >134:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EBA4 text21 CODE >135:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EC10 text21 CODE >136:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E3F6 text20 CODE >177:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E3F8 text20 CODE >179:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E402 text20 CODE >180:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E404 text19 CODE >189:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E406 text19 CODE >191:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E410 text19 CODE >192:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E786 text18 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E786 text18 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E78E text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E796 text18 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E79A text18 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E79C text18 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7A2 text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7A4 text18 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7A8 text18 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7AE text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7BA text18 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7C2 text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7C4 text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7CA text18 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7CE text18 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7CE text18 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E7D6 text18 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+E67A text17 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E67A text17 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E682 text17 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E686 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E688 text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E68E text17 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E690 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E694 text17 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E6A0 text17 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E6A8 text17 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E6AE text17 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E6B2 text17 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E6B2 text17 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+E6BA text17 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+ECAE text16 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ECAE text16 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ECB6 text16 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ECD2 text16 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ECD6 text16 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ECDE text16 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ECF0 text16 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ED08 text16 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ED24 text16 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ED2A text16 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ED2E text16 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ED32 text16 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ED44 text16 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+ED4C text16 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+E6BC text15 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+E6BC text15 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+E6C4 text15 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+E6C8 text15 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+E6D8 text15 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+E6E0 text15 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\itoa.c
+E516 text14 CODE >46:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E518 text14 CODE >48:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E51A text14 CODE >49:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E520 text14 CODE >50:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E522 text14 CODE >51:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E52E text14 CODE >52:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E530 text14 CODE >53:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E53C text14 CODE >54:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E53E text14 CODE >55:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+EA94 text13 CODE >76:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+EA94 text13 CODE >78:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+EA98 text13 CODE >80:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+EA9A text13 CODE >82:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+EAD4 text13 CODE >83:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+EAD6 text13 CODE >80:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\lcd.c
+E540 text12 CODE >464:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E540 text12 CODE >466:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E54A text12 CODE >467:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E550 text12 CODE >468:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E55C text12 CODE >469:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E568 text12 CODE >470:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E56A text11 CODE >156:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E56A text11 CODE >158:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E572 text11 CODE >159:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E57A text11 CODE >160:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E582 text11 CODE >161:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E58A text11 CODE >162:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E592 text11 CODE >163:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E8EC text10 CODE >81:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E8EC text10 CODE >84:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E8F6 text10 CODE >86:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E904 text10 CODE >87:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E920 text10 CODE >88:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E930 text10 CODE >84:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E6FE text9 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcat.c
+E6FE text9 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcat.c
+E706 text9 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcat.c
+E708 text9 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcat.c
+E70C text9 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcat.c
+E71C text9 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcat.c
+E720 text9 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcat.c
+E724 text9 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcat.c
+E740 text8 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcpy.c
+E740 text8 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcpy.c
+E748 text8 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcpy.c
+E74A text8 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcpy.c
+E74E text8 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcpy.c
+E752 text8 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\strcpy.c
+EE00 text7 CODE >429:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE00 text7 CODE >431:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE0A text7 CODE >433:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE18 text7 CODE >434:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE28 text7 CODE >435:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE2E text7 CODE >436:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE42 text7 CODE >437:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE72 text7 CODE >438:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE86 text7 CODE >439:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EE92 text7 CODE >440:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EEB6 text7 CODE >431:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E890 text6 CODE >167:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E892 text6 CODE >169:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E8A2 text6 CODE >170:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E8B4 text6 CODE >171:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E8C6 text6 CODE >172:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E8D8 text6 CODE >173:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FA9E text5 CODE >195:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FAA0 text5 CODE >198:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FAAE text5 CODE >200:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FAB4 text5 CODE >201:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FABA text5 CODE >202:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FAC0 text5 CODE >203:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FACC text5 CODE >204:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FAD2 text5 CODE >205:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FADE text5 CODE >206:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FAEC text5 CODE >207:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FAEE text5 CODE >209:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FAFC text5 CODE >210:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB0A text5 CODE >207:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB18 text5 CODE >213:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB28 text5 CODE >214:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB56 text5 CODE >216:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB5C text5 CODE >217:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB62 text5 CODE >218:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB6E text5 CODE >219:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB70 text5 CODE >221:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB7E text5 CODE >222:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FB8C text5 CODE >223:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FBAC text5 CODE >224:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FBC0 text5 CODE >225:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FBD4 text5 CODE >226:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FBE8 text5 CODE >227:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FBEE text5 CODE >228:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FBFA text5 CODE >229:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FC0A text5 CODE >219:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FC2A text5 CODE >232:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FC74 text5 CODE >234:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FC7A text5 CODE >235:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FC80 text5 CODE >236:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FC8C text5 CODE >237:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FC92 text5 CODE >238:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FC9E text5 CODE >239:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FCA0 text5 CODE >241:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FCAE text5 CODE >242:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FCBC text5 CODE >243:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FCCC text5 CODE >239:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FCCC text5 CODE >244:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD08 text5 CODE >246:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD0E text5 CODE >248:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD1C text5 CODE >250:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD26 text5 CODE >251:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD30 text5 CODE >252:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD36 text5 CODE >254:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD3C text5 CODE >255:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD42 text5 CODE >256:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD58 text5 CODE >257:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD70 text5 CODE >258:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD7C text5 CODE >259:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FD9C text5 CODE >260:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FDB0 text5 CODE >261:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FDC4 text5 CODE >262:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FDD8 text5 CODE >263:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FDDE text5 CODE >264:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FDEA text5 CODE >265:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FDF0 text5 CODE >266:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FDFC text5 CODE >268:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE08 text5 CODE >269:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE1C text5 CODE >271:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE26 text5 CODE >272:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE2C text5 CODE >273:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE32 text5 CODE >274:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE3E text5 CODE >275:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE4A text5 CODE >276:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE54 text5 CODE >278:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE62 text5 CODE >280:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE68 text5 CODE >281:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE6E text5 CODE >282:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE74 text5 CODE >283:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE88 text5 CODE >284:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FE94 text5 CODE >285:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEA0 text5 CODE >286:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEA6 text5 CODE >288:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEB4 text5 CODE >290:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEBA text5 CODE >291:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEC0 text5 CODE >292:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEC6 text5 CODE >293:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FED2 text5 CODE >294:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEDE text5 CODE >295:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEE4 text5 CODE >296:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+FEEE text5 CODE >298:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9B0 text4 CODE >303:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9B0 text4 CODE >305:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9BE text4 CODE >307:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9C8 text4 CODE >308:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9CE text4 CODE >309:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9D4 text4 CODE >310:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9DA text4 CODE >311:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9E0 text4 CODE >312:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9EC text4 CODE >313:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9F8 text4 CODE >314:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E9FE text4 CODE >315:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA04 text4 CODE >316:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA0E text4 CODE >317:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F196 text3 CODE >322:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F196 text3 CODE >324:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F198 text3 CODE >327:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F1B2 text3 CODE >328:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F1BC text3 CODE >329:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F1D6 text3 CODE >330:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F1E2 text3 CODE >331:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F1E4 text3 CODE >333:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F1FE text3 CODE >334:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F208 text3 CODE >335:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F222 text3 CODE >336:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F22E text3 CODE >337:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F230 text3 CODE >339:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F24A text3 CODE >340:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F254 text3 CODE >341:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F26E text3 CODE >342:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F27A text3 CODE >346:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F27C text3 CODE >324:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F55C text2 CODE >350:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F55C text2 CODE >353:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F564 text2 CODE >354:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F578 text2 CODE >355:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F58C text2 CODE >356:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5A0 text2 CODE >357:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5B4 text2 CODE >358:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5BA text2 CODE >359:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5C0 text2 CODE >360:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5CC text2 CODE >361:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5D2 text2 CODE >362:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5DE text2 CODE >363:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5E6 text2 CODE >364:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5EC text2 CODE >370:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5F6 text2 CODE >372:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F5FE text2 CODE >373:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F604 text2 CODE >374:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F60A text2 CODE >375:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F616 text2 CODE >376:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F61C text2 CODE >377:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F628 text2 CODE >378:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F62A text2 CODE >379:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F634 text2 CODE >381:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F63C text2 CODE >382:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F642 text2 CODE >383:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F648 text2 CODE >384:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F654 text2 CODE >385:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F65A text2 CODE >386:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F666 text2 CODE >388:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F668 text2 CODE >390:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F670 text2 CODE >392:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F678 text2 CODE >393:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F67E text2 CODE >394:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F684 text2 CODE >395:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F690 text2 CODE >396:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F696 text2 CODE >397:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6A2 text2 CODE >398:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6A4 text2 CODE >399:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6AE text2 CODE >401:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6B6 text2 CODE >402:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6BC text2 CODE >403:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6C2 text2 CODE >404:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6CE text2 CODE >405:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6D4 text2 CODE >406:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6E0 text2 CODE >408:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6E2 text2 CODE >410:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6E8 text2 CODE >411:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6EE text2 CODE >412:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F6FA text2 CODE >413:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F700 text2 CODE >414:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F70C text2 CODE >415:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F714 text2 CODE >419:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F716 text2 CODE >367:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F73A text2 CODE >420:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F748 text2 CODE >365:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F756 text2 CODE >422:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+F764 text2 CODE >424:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA1A text1 CODE >446:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA1A text1 CODE >448:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA22 text1 CODE >449:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA2C text1 CODE >450:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA36 text1 CODE >451:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA40 text1 CODE >452:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA46 text1 CODE >453:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA4C text1 CODE >454:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA52 text1 CODE >455:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA58 text1 CODE >456:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA64 text1 CODE >457:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA6A text1 CODE >458:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA76 text1 CODE >459:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA82 text1 CODE >460:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA88 text1 CODE >461:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+EA92 text1 CODE >462:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E478 text0 CODE >69:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E478 text0 CODE >71:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E47C text0 CODE >72:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E480 text0 CODE >73:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E484 text0 CODE >76:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E488 text0 CODE >77:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E49A text0 CODE >74:C:\Data\Work\PIC Assignment\Assignment_2\Script\WMC_Assignment_2.X\WMC_2.c
+E600 cinit CODE >1049:C:\Users\karem\AppData\Local\Temp\s8q4.
+E600 cinit CODE >1051:C:\Users\karem\AppData\Local\Temp\s8q4.
+E600 cinit CODE >1054:C:\Users\karem\AppData\Local\Temp\s8q4.
+E600 cinit CODE >1096:C:\Users\karem\AppData\Local\Temp\s8q4.
+E602 cinit CODE >1097:C:\Users\karem\AppData\Local\Temp\s8q4.
+E604 cinit CODE >1098:C:\Users\karem\AppData\Local\Temp\s8q4.
+E606 cinit CODE >1099:C:\Users\karem\AppData\Local\Temp\s8q4.
+E608 cinit CODE >1100:C:\Users\karem\AppData\Local\Temp\s8q4.
+E60A cinit CODE >1101:C:\Users\karem\AppData\Local\Temp\s8q4.
+E60C cinit CODE >1102:C:\Users\karem\AppData\Local\Temp\s8q4.
+E60E cinit CODE >1103:C:\Users\karem\AppData\Local\Temp\s8q4.
+E612 cinit CODE >1104:C:\Users\karem\AppData\Local\Temp\s8q4.
+E614 cinit CODE >1105:C:\Users\karem\AppData\Local\Temp\s8q4.
+E618 cinit CODE >1109:C:\Users\karem\AppData\Local\Temp\s8q4.
+E61C cinit CODE >1110:C:\Users\karem\AppData\Local\Temp\s8q4.
+E61E cinit CODE >1111:C:\Users\karem\AppData\Local\Temp\s8q4.
+E61E cinit CODE >1112:C:\Users\karem\AppData\Local\Temp\s8q4.
+E620 cinit CODE >1113:C:\Users\karem\AppData\Local\Temp\s8q4.
+E622 cinit CODE >1114:C:\Users\karem\AppData\Local\Temp\s8q4.
+E624 cinit CODE >1117:C:\Users\karem\AppData\Local\Temp\s8q4.
+E628 cinit CODE >1118:C:\Users\karem\AppData\Local\Temp\s8q4.
+E62A cinit CODE >1119:C:\Users\karem\AppData\Local\Temp\s8q4.
+E62A cinit CODE >1120:C:\Users\karem\AppData\Local\Temp\s8q4.
+E62C cinit CODE >1121:C:\Users\karem\AppData\Local\Temp\s8q4.
+E62E cinit CODE >1122:C:\Users\karem\AppData\Local\Temp\s8q4.
+E630 cinit CODE >1128:C:\Users\karem\AppData\Local\Temp\s8q4.
+E630 cinit CODE >1131:C:\Users\karem\AppData\Local\Temp\s8q4.
+E632 cinit CODE >1132:C:\Users\karem\AppData\Local\Temp\s8q4.
+E634 cinit CODE >1133:C:\Users\karem\AppData\Local\Temp\s8q4.
+E636 cinit CODE >1134:C:\Users\karem\AppData\Local\Temp\s8q4.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_b D0 0 BANK0 1 bssBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lmediumconst FEF0 0 MEDIUMCONST 0 mediumconst dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hspace_1 F3 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hspace_2 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_lcd_cmd 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_lcd_dat 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_lcd_str 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_init_adc 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftdiv@exp 28 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__mediumconst FEF0 0 MEDIUMCONST 0 mediumconst C:\Users\karem\AppData\Local\Temp\s8q4.obj
+__size_of_operate 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_atraso_ms E600 0 CODE 0 text43 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_remaintime EEC8 0 CODE 0 text7 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_atraso_ms 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+mass@f 39 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+mass@m 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+itoa@base 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\WMC_Assignment_2.X.debug.obj
+_LATA F89 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_LATB F8A 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_LATC F8B 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_LATD F8C 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_LATE F8D 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+___sp 0 0 STACK 2 stack C:\Users\karem\AppData\Local\Temp\s8q4.obj
+_buff 5F 0 COMRAM 1 bssCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_cycl 71 0 COMRAM 1 dataCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_ftoa F2A2 0 CODE 0 text26 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_itoa E6BC 0 CODE 0 text15 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_lock E540 0 CODE 0 text12 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_main E478 0 CODE 0 text0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_mass EB96 0 CODE 0 text21 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_menu F55C 0 CODE 0 text2 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_spin E9B0 0 CODE 0 text4 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_stop EA1A 0 CODE 0 text1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_str1 61 0 COMRAM 1 bssCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_utoa ECAE 0 CODE 0 text16 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftadd@f1 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftadd@f2 2D 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_mydelay E8EC 0 CODE 0 text10 dist/default/debug\WMC_Assignment_2.X.debug.obj
+start 0 0 CODE 0 init C:\Users\karem\AppData\Local\Temp\s8q4.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___ftdiv 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___ftsub 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_ftoa 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_itoa 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_lock 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_mass 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_menu 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_spin 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_stop 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_utoa 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___llmod 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+spin@spindelay 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftdiv@f1 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftdiv@f2 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftdiv@f3 25 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_atraso_ms E5CA 0 CODE 0 text43 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftge@ff1 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftge@ff2 39 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+utoa@c 10 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+utoa@v E 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__accesstop 80 0 ABS 0 - C:\Users\karem\AppData\Local\Temp\s8q4.obj
+intlevel0 0 0 CODE 0 text C:\Users\karem\AppData\Local\Temp\s8q4.obj
+intlevel1 0 0 CODE 0 text C:\Users\karem\AppData\Local\Temp\s8q4.obj
+intlevel2 0 0 CODE 0 text C:\Users\karem\AppData\Local\Temp\s8q4.obj
+intlevel3 0 0 CODE 0 text C:\Users\karem\AppData\Local\Temp\s8q4.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+strcat@from 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_init_adc E3DA 0 CODE 0 text45 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___llmod@divisor 12 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_init_adc E3E8 0 CODE 0 text45 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__pidataCOMRAM E3D0 0 CODE 0 idataCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftmul@f1 C 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftmul@f2 F 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftneg@f1 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+outlet@o 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_ADRESH FC4 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_ADRESL FC3 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_lcd_cmd E516 0 CODE 0 text41 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_lcd_dat E540 0 CODE 0 text14 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_lcd_str EB14 0 CODE 0 text13 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\karem\AppData\Local\Temp\s8q4.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\karem\AppData\Local\Temp\s8q4.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___ftge ECAE 0 CODE 0 text39 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___wmul E4C2 0 CODE 0 text29 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_operate FEF0 0 CODE 0 text5 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftsub@f1 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftsub@f2 39 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+mydelay@n 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___fttol@f1 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+ftoa@status 3F 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_init_ports 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+operate@s 53 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_button E596 0 CODE 0 text11 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___ftadd F55C 0 CODE 0 text35 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___ftdiv EFAE 0 CODE 0 text24 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___ftmul F0A2 0 CODE 0 text37 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___ftneg E454 0 CODE 0 text36 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___ftsub E67A 0 CODE 0 text34 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___fttol F196 0 CODE 0 text33 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___lldiv EB96 0 CODE 0 text31 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___llmod E9B0 0 CODE 0 text30 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___lwdiv E7D8 0 CODE 0 text18 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___lwmod E6BC 0 CODE 0 text17 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_dpowers FEF1 0 MEDIUMCONST 0 mediumconst dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwdiv@quotient 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_cycle 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+atraso_ms@i 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+atraso_ms@j 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_inlet 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_motor 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_myadc 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___lltoft 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+itoa@buf 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+itoa@val 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___lwtoft 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lldiv@counter D 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/debug\WMC_Assignment_2.X.debug.obj
+start_initialization E600 0 CODE 0 cinit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lldiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_lcd_wr E3DA 0 CODE 0 text42 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___rparam_used 1 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__pcstackBANK0 80 0 BANK0 1 cstackBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_remaintime 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+___fttol@exp1 29 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___fttol@lval 25 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lltoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_outlet E412 0 CODE 0 text19 dist/default/debug\WMC_Assignment_2.X.debug.obj
+myadc@ch 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftpack ED52 0 CODE 0 text38 dist/default/debug\WMC_Assignment_2.X.debug.obj
+utoa@buf 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+utoa@val A 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftpack@arg 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftpack@exp 4 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_isdigit$919 2 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___ftpack EE00 0 CODE 0 text38 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank8 0 0 ABS 0 bank8 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank9 0 0 ABS 0 bank9 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hconst 0 0 CONST 0 const dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_status E8EC 0 CODE 0 text6 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_strcat E740 0 CODE 0 text9 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_strcpy E786 0 CODE 0 text8 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hidata 0 0 CODE 0 idata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hstack 0 0 STACK 2 stack dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext7 0 0 ABS 0 text7 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext8 0 0 ABS 0 text8 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext9 0 0 ABS 0 text9 dist/default/debug\WMC_Assignment_2.X.debug.obj
+status@c 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+status@s 2 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwdiv@counter 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank10 0 0 ABS 0 bank10 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank11 0 0 ABS 0 bank11 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank12 0 0 ABS 0 bank12 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank13 0 0 ABS 0 bank13 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank14 0 0 ABS 0 bank14 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbank15 0 0 ABS 0 bank15 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\WMC_Assignment_2.X.debug.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\karem\AppData\Local\Temp\s8q4.obj
+lcd_str@i B 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_sprintf FA9E 0 CODE 0 text27 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lltoft E834 0 CODE 0 text32 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_lcd_init 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hcomram 0 0 ABS 0 comram dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwtoft E454 0 CODE 0 text23 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank8 0 0 ABS 0 bank8 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank9 0 0 ABS 0 bank9 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_isdigit E430 0 CODE 0 text28 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lconst 0 0 CONST 0 const dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lidata 0 0 CODE 0 idata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftadd@exp1 35 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftadd@exp2 34 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftadd@sign 33 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lstack 0 0 STACK 2 stack dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___lltoft E890 0 CODE 0 text32 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of___lwtoft E478 0 CODE 0 text23 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_PORTAbits F80 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_PORTBbits F81 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_PORTEbits F84 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_speedofdrum 5D 0 COMRAM 1 bssCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hdata 0 0 ABS 0 data dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hinit 4 0 CODE 0 init dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext 0 0 ABS 0 text dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ldata 0 0 ABS 0 data dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Linit 0 0 CODE 0 init dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext 0 0 ABS 0 text dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftge EC1E 0 CODE 0 text39 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___wmul E49C 0 CODE 0 text29 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hintret 0 0 ABS 0 intret dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__S0 30000E 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__S1 F3 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__S2 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_str E3 0 BANK0 1 bssBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_button E56A 0 CODE 0 text11 dist/default/debug\WMC_Assignment_2.X.debug.obj
+operate@maxmass 4B 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_mydelay 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+utoa@base C 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\WMC_Assignment_2.X.debug.obj
+sprintf@val 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+ftoa@buf D2 0 BANK0 1 bssBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+ftoa@rem 41 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+strcat@cp 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+strcat@to 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+strcpy@cp 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+strcpy@to 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_lcd_init E7D8 0 CODE 0 text40 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lldiv@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_lcd_cmd E4EC 0 CODE 0 text41 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_lcd_dat E516 0 CODE 0 text14 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_lcd_str EA94 0 CODE 0 text13 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hramtop 1000 0 RAM 0 ramtop dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\WMC_Assignment_2.X.debug.obj
+__activetblptr 2 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___ftge 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_lcd_init E834 0 CODE 0 text40 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext10 0 0 ABS 0 text10 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext11 0 0 ABS 0 text11 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext12 0 0 ABS 0 text12 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext13 0 0 ABS 0 text13 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext14 0 0 ABS 0 text14 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext15 0 0 ABS 0 text15 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext16 0 0 ABS 0 text16 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext17 0 0 ABS 0 text17 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext18 0 0 ABS 0 text18 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext19 0 0 ABS 0 text19 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext20 0 0 ABS 0 text20 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext21 0 0 ABS 0 text21 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext22 0 0 ABS 0 text22 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext23 0 0 ABS 0 text23 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext24 0 0 ABS 0 text24 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext25 0 0 ABS 0 text25 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext26 0 0 ABS 0 text26 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext27 0 0 ABS 0 text27 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext28 0 0 ABS 0 text28 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext29 0 0 ABS 0 text29 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext30 0 0 ABS 0 text30 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext31 0 0 ABS 0 text31 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext32 0 0 ABS 0 text32 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext33 0 0 ABS 0 text33 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext34 0 0 ABS 0 text34 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext35 0 0 ABS 0 text35 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext36 0 0 ABS 0 text36 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext37 0 0 ABS 0 text37 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext38 0 0 ABS 0 text38 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext39 0 0 ABS 0 text39 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext40 0 0 ABS 0 text40 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext41 0 0 ABS 0 text41 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext42 0 0 ABS 0 text42 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext43 0 0 ABS 0 text43 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext44 0 0 ABS 0 text44 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Htext45 0 0 ABS 0 text45 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_operate FA9E 0 CODE 0 text5 dist/default/debug\WMC_Assignment_2.X.debug.obj
+lcd_str@str 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_lcd_wr E3D2 0 CODE 0 text42 dist/default/debug\WMC_Assignment_2.X.debug.obj
+sprintf@flag 27 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+sprintf@prec 30 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext10 E8EC 0 CODE 0 text10 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext11 E56A 0 CODE 0 text11 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext12 E540 0 CODE 0 text12 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext13 EA94 0 CODE 0 text13 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext14 E516 0 CODE 0 text14 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext15 E6BC 0 CODE 0 text15 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext16 ECAE 0 CODE 0 text16 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext17 E67A 0 CODE 0 text17 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext18 E786 0 CODE 0 text18 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext19 E404 0 CODE 0 text19 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext20 E3F6 0 CODE 0 text20 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext21 EB96 0 CODE 0 text21 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext22 E596 0 CODE 0 text22 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext23 E454 0 CODE 0 text23 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext24 EEC8 0 CODE 0 text24 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext25 E3E8 0 CODE 0 text25 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext26 F2A2 0 CODE 0 text26 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext27 F772 0 CODE 0 text27 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext28 E412 0 CODE 0 text28 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext29 E49C 0 CODE 0 text29 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext30 E94A 0 CODE 0 text30 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext31 EB14 0 CODE 0 text31 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext32 E834 0 CODE 0 text32 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext33 F0A2 0 CODE 0 text33 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext34 E63A 0 CODE 0 text34 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext35 F3B0 0 CODE 0 text35 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext36 E430 0 CODE 0 text36 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext37 EFAE 0 CODE 0 text37 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext38 ED52 0 CODE 0 text38 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext39 EC1E 0 CODE 0 text39 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext40 E7D8 0 CODE 0 text40 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext41 E4EC 0 CODE 0 text41 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext42 E3D2 0 CODE 0 text42 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext43 E5CA 0 CODE 0 text43 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext44 E4C2 0 CODE 0 text44 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext45 E3DA 0 CODE 0 text45 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_button 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftadd F3B0 0 CODE 0 text35 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftdiv EEC8 0 CODE 0 text24 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftmul EFAE 0 CODE 0 text37 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftneg E430 0 CODE 0 text36 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftsub E63A 0 CODE 0 text34 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___fttol F0A2 0 CODE 0 text33 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lldiv EB14 0 CODE 0 text31 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___llmod E94A 0 CODE 0 text30 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwdiv E786 0 CODE 0 text18 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwmod E67A 0 CODE 0 text17 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank10 0 0 ABS 0 bank10 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank11 0 0 ABS 0 bank11 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank12 0 0 ABS 0 bank12 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank13 0 0 ABS 0 bank13 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank14 0 0 ABS 0 bank14 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbank15 0 0 ABS 0 bank15 dist/default/debug\WMC_Assignment_2.X.debug.obj
+inlet@i 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\WMC_Assignment_2.X.debug.obj
+_outlet E404 0 CODE 0 text19 dist/default/debug\WMC_Assignment_2.X.debug.obj
+?_ftoa 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?_mass 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___ftpack 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_LATBbits F8A 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_LATCbits F8B 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_LATEbits F8D 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\WMC_Assignment_2.X.debug.obj
+mydelay@ii A 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_status E890 0 CODE 0 text6 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_strcat E6FE 0 CODE 0 text9 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_strcpy E740 0 CODE 0 text8 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\WMC_Assignment_2.X.debug.obj
+itoa@cp 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwtoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+stackhi F7F 0 ABS 0 - C:\Users\karem\AppData\Local\Temp\s8q4.obj
+stacklo F3 0 ABS 0 - C:\Users\karem\AppData\Local\Temp\s8q4.obj
+__Lintcode 0 0 CODE 0 intcode dist/default/debug\WMC_Assignment_2.X.debug.obj
+remaintime@i 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+remaintime@t 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___lltoft 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lintret 0 0 ABS 0 intret dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___lwtoft 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+strcpy@from 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_lcd_wr 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_mydelay E94A 0 CODE 0 text10 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lspace_0 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lspace_1 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lspace_2 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftmul@cntr 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__pbssCOMRAM 5A 0 COMRAM 1 bssCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftmul@sign 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+lcd_cmd@val 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+operate@stat 51 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+end_of_initialization E630 0 CODE 0 cinit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_outlet 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lwdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___ftadd 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___ftdiv 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___ftmul C 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___ftneg 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___ftsub 36 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___fttol 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___lldiv 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___llmod E 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___lwdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+?___lwmod 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/debug\WMC_Assignment_2.X.debug.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lramtop 1000 0 RAM 0 ramtop dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_status 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_strcat 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__size_of_strcpy 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\WMC_Assignment_2.X.debug.obj
+__pcinit E600 0 CODE 0 cinit dist/default/debug\WMC_Assignment_2.X.debug.obj
+ftoa@cp 49 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lltoft@exp 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext0 E478 0 CODE 0 text0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext1 EA1A 0 CODE 0 text1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext2 F55C 0 CODE 0 text2 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext3 F196 0 CODE 0 text3 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext4 E9B0 0 CODE 0 text4 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext5 FA9E 0 CODE 0 text5 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext6 E890 0 CODE 0 text6 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext7 EE00 0 CODE 0 text7 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext8 E740 0 CODE 0 text8 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ptext9 E6FE 0 CODE 0 text9 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext43 0 0 ABS 0 text43 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext44 0 0 ABS 0 text44 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Ltext45 0 0 ABS 0 text45 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\karem\AppData\Local\Temp\s8q4.obj
+_sprintf F772 0 CODE 0 text27 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug\WMC_Assignment_2.X.debug.obj
+_init_ports E4C2 0 CODE 0 text44 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\WMC_Assignment_2.X.debug.obj
+sprintf@ap 28 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+sprintf@sp 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_isdigit E412 0 CODE 0 text28 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\WMC_Assignment_2.X.debug.obj
+motor@m 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___param_bank 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftmul@exp 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of__initialization E630 0 CODE 0 cinit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\WMC_Assignment_2.X.debug.obj
+?_myadc 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftpack@sign 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___lldiv@quotient 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftdiv@cntr 24 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftdiv@sign 29 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+atraso_ms@valor 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__pmediumconst FEF0 0 MEDIUMCONST 0 mediumconst dist/default/debug\WMC_Assignment_2.X.debug.obj
+___llmod@dividend E 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___llmod@counter 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+sprintf@c 32 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+sprintf@f 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+lcd_dat@val 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_ftoa F3B0 0 CODE 0 text26 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_itoa E6FE 0 CODE 0 text15 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_lock E56A 0 CODE 0 text12 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_main E49C 0 CODE 0 text0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_mass EC1E 0 CODE 0 text21 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_menu F772 0 CODE 0 text2 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_spin EA1A 0 CODE 0 text4 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_stop EA94 0 CODE 0 text1 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_utoa ED52 0 CODE 0 text16 dist/default/debug\WMC_Assignment_2.X.debug.obj
+isdigit@c 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+cycle@c 54 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+menu@menu 80 0 BANK0 1 cstackBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_dpowers FF19 0 MEDIUMCONST 0 mediumconst dist/default/debug\WMC_Assignment_2.X.debug.obj
+_remaintime EE00 0 CODE 0 text7 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_cycle F2A2 0 CODE 0 text3 dist/default/debug\WMC_Assignment_2.X.debug.obj
+?_sprintf 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_inlet E3F6 0 CODE 0 text25 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_PORTD F83 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_motor E404 0 CODE 0 text20 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_myadc E5CA 0 CODE 0 text22 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_TRISA F92 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_TRISB F93 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_TRISC F94 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_TRISD F95 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+_TRISE F96 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+myadc@a 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__HRAM 0 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hbss 0 0 RAM 1 bss dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hram 0 0 ABS 0 ram dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\WMC_Assignment_2.X.debug.obj
+__LRAM 1 0 ABS 0 - dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lbss 0 0 RAM 1 bss dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lram 0 0 ABS 0 ram dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\WMC_Assignment_2.X.debug.obj
+_cycle F196 0 CODE 0 text3 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_inlet E3E8 0 CODE 0 text25 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_motor E3F6 0 CODE 0 text20 dist/default/debug\WMC_Assignment_2.X.debug.obj
+_myadc E596 0 CODE 0 text22 dist/default/debug\WMC_Assignment_2.X.debug.obj
+lcd_wr@val 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__end_of_init_ports E4EC 0 CODE 0 text44 dist/default/debug\WMC_Assignment_2.X.debug.obj
+___fttol@sign1 24 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+sprintf@width 2E 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+operate@washtime 4E 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__initialization E600 0 CODE 0 cinit dist/default/debug\WMC_Assignment_2.X.debug.obj
+__pbssBANK0 D0 0 BANK0 1 bssBANK0 dist/default/debug\WMC_Assignment_2.X.debug.obj
+__pdataCOMRAM 71 0 COMRAM 1 dataCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+_massindrum 5A 0 COMRAM 1 bssCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\WMC_Assignment_2.X.debug.obj
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\WMC_Assignment_2.X.debug.obj
+__Hintcode 0 0 CODE 0 intcode dist/default/debug\WMC_Assignment_2.X.debug.obj
+ftoa@f 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+ftoa@l 45 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+___ftmul@f3_as_product 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\WMC_Assignment_2.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 E600 E600 3A 1
+idloc 0 200000 200000 8 1
+text0 0 E478 E478 24 1
+text1 0 EA1A EA1A 7A 1
+text2 0 F55C F55C 216 1
+text3 0 F196 F196 10C 1
+text4 0 E9B0 E9B0 6A 1
+text5 0 FA9E FA9E 452 1
+text6 0 E890 E890 5C 1
+text7 0 EE00 EE00 C8 1
+text8 0 E740 E740 46 1
+text9 0 E6FE E6FE 42 1
+text10 0 E8EC E8EC 5E 1
+text11 0 E56A E56A 2C 1
+text12 0 E540 E540 2A 1
+text13 0 EA94 EA94 80 1
+text14 0 E516 E516 2A 1
+text15 0 E6BC E6BC 42 1
+text16 0 ECAE ECAE A4 1
+text17 0 E67A E67A 42 1
+text18 0 E786 E786 52 1
+text19 0 E404 E404 E 1
+text20 0 E3F6 E3F6 E 1
+text21 0 EB96 EB96 88 1
+text22 0 E596 E596 34 1
+text23 0 E454 E454 24 1
+text24 0 EEC8 EEC8 E6 1
+text25 0 E3E8 E3E8 E 1
+text26 0 F2A2 F2A2 10E 1
+text27 0 F772 F772 32C 1
+text28 0 E412 E412 1E 1
+text29 0 E49C E49C 26 1
+text30 0 E94A E94A 66 1
+text31 0 EB14 EB14 82 1
+text32 0 E834 E834 5C 1
+text33 0 F0A2 F0A2 F4 1
+text34 0 E63A E63A 40 1
+text35 0 F3B0 F3B0 1AC 1
+text36 0 E430 E430 24 1
+text37 0 EFAE EFAE F4 1
+text38 0 ED52 ED52 AE 1
+text39 0 EC1E EC1E 90 1
+text40 0 E7D8 E7D8 5C 1
+text41 0 E4EC E4EC 2A 1
+text42 0 E3D2 E3D2 8 1
+text43 0 E5CA E5CA 36 1
+text44 0 E4C2 E4C2 2A 1
+text45 0 E3DA E3DA E 1
+idataCOMRAM 0 E3D0 E3D0 2 1
+cstackCOMRAM 1 1 1 72 1
+cstackBANK0 1 80 80 73 1
+reset_vec 0 0 0 4 1
+mediumconst 0 FEF0 FEF0 110 1
+config 0 300000 300000 E 1
