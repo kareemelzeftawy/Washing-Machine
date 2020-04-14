@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml version="8.0" projectid="{BFDA21AA-8BAE-4028-9A00-670F276C0EFD}">
+  <targets>
+    <target scanner="{3DD0C05C-F5B5-44FD-A77A-8E832CC25300}" enabled="True" visible="True">
+      <options>
+        <pages2localize>1-3</pages2localize>
+        <output_format>0</output_format>
+        <protection_option>0</protection_option>
+        <optimization_method>2</optimization_method>
+        <encodings>
+          <native_encoding>
+            <code>en</code>
+            <encoding/>
+          </native_encoding>
+          <output_language_list/>
+        </encodings>
+        <output_lang_delimiter/>
+        <filename>333964172-PicsimLab-Board4-pdf.pdf</filename>
+        <output_settings>
+          <output_coding>ISO</output_coding>
+          <output_directory/>
+          <embedding>False</embedding>
+          <file_type>localized</file_type>
+          <output_type>subdirectory</output_type>
+        </output_settings>
+      </options>
+      <stringdata/>
+      <customdata/>
+    </target>
+  </targets>
+  <bookmarks/>
+  <infos>
+    <info infotype="description"/>
+  </infos>
+  <excludes emptynative="False" userset="False" allowspace="False" internalplaceholders="False" printable="" unprintable="" case-sensitive="False"/>
+  <languages native="en"/>
+</xml>
