@@ -1,0 +1,1483 @@
+
+
+Microchip Technology PIC18 LITE Macro Assembler V1.41 build -162212810 
+                                                                                               Fri Apr 28 14:15:30 2017
+
+Microchip Technology Omniscient Code Generator v1.41 (Free mode) build 201701250102
+     1                           	processor	18F4620
+     2                           	fnconf	rparam,??,?,0
+     3                           	opt	pw 120
+     4                           	opt	lm
+     5                           	psect	smallconst,global,reloc=2,class=SMALLCONST,delta=1,noexec
+     6                           	psect	cinit,global,reloc=2,class=CODE,delta=1
+     7                           	psect	bitbssCOMRAM,global,bit,class=COMRAM,space=1,delta=1,noexec
+     8                           	psect	bssCOMRAM,global,class=COMRAM,space=1,delta=1,noexec
+     9                           	psect	cstackCOMRAM,global,class=COMRAM,space=1,delta=1,noexec
+    10                           	psect	text0,global,reloc=2,class=CODE,delta=1
+    11                           	psect	text1,global,reloc=2,class=CODE,delta=1
+    12                           	psect	text2,global,reloc=2,class=CODE,delta=1
+    13                           	psect	text3,global,reloc=2,class=CODE,delta=1
+    14                           	psect	text4,global,reloc=2,class=CODE,delta=1
+    15                           	psect	text5,global,reloc=2,class=CODE,delta=1
+    16                           	psect	text6,global,reloc=2,class=CODE,delta=1
+    17                           	psect	text7,global,reloc=2,class=CODE,delta=1
+    18                           	psect	intsave_regs,global,class=BIGRAM,space=1,delta=1,noexec
+    19                           	psect	rparam,global,class=COMRAM,space=1,delta=1,noexec
+    20  0000                     
+    21                           ; Version 1.41
+    22                           ; Generated 25/01/2017 GMT
+    23                           ; 
+    24                           ; Copyright © 2017, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    25                           ; All rights reserved.
+    26                           ; 
+    27                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    28                           ; 
+    29                           ; Redistribution and use in source and binary forms, with or without modification, are
+    30                           ; permitted provided that the following conditions are met:
+    31                           ; 
+    32                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    33                           ;        conditions and the following disclaimer.
+    34                           ; 
+    35                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    36                           ;        of conditions and the following disclaimer in the documentation and/or other
+    37                           ;        materials provided with the distribution.
+    38                           ; 
+    39                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    40                           ;        software without specific prior written permission.
+    41                           ; 
+    42                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    43                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    44                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    45                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    46                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    47                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    48                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    49                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    50                           ; 
+    51                           ; 
+    52                           ; Code-generator required, PIC18F4620 Definitions
+    53                           ; 
+    54                           ; SFR Addresses
+    55  0000                     
+    56                           	psect	smallconst
+    57  001000                     __psmallconst:
+    58                           	opt stack 0
+    59  001000  00                 	db	0
+    60  001001                     _SegCode:
+    61                           	opt stack 0
+    62  001001  3F                 	db	63
+    63  001002  06                 	db	6
+    64  001003  5B                 	db	91
+    65  001004  4F                 	db	79
+    66  001005  66                 	db	102
+    67  001006  6D                 	db	109
+    68  001007  7D                 	db	125
+    69  001008  07                 	db	7
+    70  001009  7F                 	db	127
+    71  00100A  66                 	db	102
+    72  00100B  80                 	db	128
+    73  00100C                     __end_of_SegCode:
+    74                           	opt stack 0
+    75  0000                     _PORTEbits	set	3972
+    76  0000                     _PORTCbits	set	3970
+    77  0000                     _PORTDbits	set	3971
+    78  0000                     _ADRESH	set	4036
+    79  0000                     _ADRESL	set	4035
+    80  0000                     _ADCON0bits	set	4034
+    81  0000                     _ADCON0	set	4034
+    82  0000                     _CMCON	set	4020
+    83  0000                     _ADCON2	set	4032
+    84  0000                     _ADCON1	set	4033
+    85  0000                     _PORTAbits	set	3968
+    86  0000                     _PORTBbits	set	3969
+    87  0000                     _PORTE	set	3972
+    88  0000                     _TRISE	set	3990
+    89  0000                     _PORTC	set	3970
+    90  0000                     _TRISC	set	3988
+    91  0000                     _PORTD	set	3971
+    92  0000                     _TRISD	set	3989
+    93  0000                     _TRISB	set	3987
+    94  0000                     _PORTB	set	3969
+    95  0000                     _TRISA	set	3986
+    96  0000                     _PORTA	set	3968
+    97  0000                     _RBPU	set	32655
+    98  00100C  00                 	db	0	; dummy byte at the end
+    99  0000                     
+   100                           ; #config settings
+   101                           
+   102                           	psect	cinit
+   103  00124A                     __pcinit:
+   104                           	opt stack 0
+   105  00124A                     start_initialization:
+   106                           	opt stack 0
+   107  00124A                     __initialization:
+   108                           	opt stack 0
+   109                           
+   110                           ; Clear objects allocated to BITCOMRAM (1 bytes)
+   111  00124A  6A0C               	clrf	(__pbitbssCOMRAM/(0+8))& (0+255),c
+   112                           
+   113                           ; Clear objects allocated to COMRAM (7 bytes)
+   114  00124C  EE00  F001         	lfsr	0,__pbssCOMRAM
+   115  001250  0E07               	movlw	7
+   116  001252                     clear_0:
+   117  001252  6AEE               	clrf	postinc0,c
+   118  001254  06E8               	decf	wreg,f,c
+   119  001256  E1FD               	bnz	clear_0
+   120  001258                     end_of_initialization:
+   121                           	opt stack 0
+   122  001258                     __end_of__initialization:
+   123                           	opt stack 0
+   124  001258  0E00               	movlw	low (__Lmediumconst shr (0+16))
+   125  00125A  6EF8               	movwf	tblptru,c
+   126  00125C  0100               	movlb	0
+   127  00125E  EF77  F008         	goto	_main	;jump to C main() function
+   128                           tblptru	equ	0xFF8
+   129                           postinc0	equ	0xFEE
+   130                           wreg	equ	0xFE8
+   131                           
+   132                           	psect	bitbssCOMRAM
+   133  000060                     __pbitbssCOMRAM:
+   134                           	opt stack 0
+   135  000060                     _o:
+   136                           	opt stack 0
+   137  000060                     	ds	1
+   138  000061                     _i:
+   139                           	opt stack 0
+   140  000061                     	ds	1
+   141  000062                     _m:
+   142                           	opt stack 0
+   143  000062                     	ds	1
+   144                           tblptru	equ	0xFF8
+   145                           postinc0	equ	0xFEE
+   146                           wreg	equ	0xFE8
+   147                           
+   148                           	psect	bssCOMRAM
+   149  000001                     __pbssCOMRAM:
+   150                           	opt stack 0
+   151  000001                     _Segment:
+   152                           	opt stack 0
+   153  000001                     	ds	4
+   154  000005                     _result:
+   155                           	opt stack 0
+   156  000005                     	ds	2
+   157  000007                     _ColCount:
+   158                           	opt stack 0
+   159  000007                     	ds	1
+   160                           tblptru	equ	0xFF8
+   161                           postinc0	equ	0xFEE
+   162                           wreg	equ	0xFE8
+   163                           
+   164                           	psect	cstackCOMRAM
+   165  000008                     __pcstackCOMRAM:
+   166                           	opt stack 0
+   167  000008                     ??_button:
+   168  000008                     ??_status:
+   169  000008                     
+   170                           ; 1 bytes @ 0x0
+   171  000008                     	ds	1
+   172  000009                     ??_motor:
+   173  000009                     ??_outlet:
+   174  000009                     button@push:
+   175                           	opt stack 0
+   176                           
+   177                           ; 1 bytes @ 0x1
+   178  000009                     	ds	1
+   179  00000A                     ??_main:
+   180                           
+   181                           ; 1 bytes @ 0x2
+   182  00000A                     	ds	1
+   183  00000B                     main@disp1:
+   184                           	opt stack 0
+   185                           
+   186                           ; 1 bytes @ 0x3
+   187  00000B                     	ds	1
+   188                           tblptru	equ	0xFF8
+   189                           postinc0	equ	0xFEE
+   190                           wreg	equ	0xFE8
+   191                           
+   192 ;;
+   193 ;;Main: autosize = 0, tempsize = 1, incstack = 0, save=0
+   194 ;;
+   195 ;; *************** function _main *****************
+   196 ;; Defined at:
+   197 ;;		line 267 in file "WMC.c"
+   198 ;; Parameters:    Size  Location     Type
+   199 ;;		None
+   200 ;; Auto vars:     Size  Location     Type
+   201 ;;  i               2    0        unsigned int 
+   202 ;;  disp1           1    3[COMRAM] unsigned char 
+   203 ;; Return value:  Size  Location     Type
+   204 ;;                  1    wreg      void 
+   205 ;; Registers used:
+   206 ;;		wreg, status,2, status,0, cstack
+   207 ;; Tracked objects:
+   208 ;;		On entry : 0/0
+   209 ;;		On exit  : 0/0
+   210 ;;		Unchanged: 0/0
+   211 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12  BANK13  BANK14  BANK15
+   212 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   213 ;;      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   214 ;;      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   215 ;;      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   216 ;;Total ram usage:        2 bytes
+   217 ;; Hardware stack levels required when called:    2
+   218 ;; This function calls:
+   219 ;;		_button
+   220 ;;		_init_adc
+   221 ;;		_init_ports
+   222 ;;		_inlet
+   223 ;;		_motor
+   224 ;;		_outlet
+   225 ;; This function is called by:
+   226 ;;		Startup code after reset
+   227 ;; This function uses a non-reentrant model
+   228 ;;
+   229                           
+   230                           	psect	text0
+   231  0010EE                     __ptext0:
+   232                           	opt stack 0
+   233  0010EE                     _main:
+   234                           	opt stack 29
+   235                           
+   236                           ;WMC.c: 271: char disp1;
+   237                           ;WMC.c: 273: unsigned int i;
+   238                           ;WMC.c: 276: init_ports();
+   239                           
+   240                           ;incstack = 0
+   241  0010EE  ECEB  F008         	call	_init_ports	;wreg free
+   242                           
+   243                           ;WMC.c: 277: init_adc();
+   244  0010F2  EC3A  F009         	call	_init_adc	;wreg free
+   245  0010F6                     l145:
+   246                           
+   247                           ;WMC.c: 280: {
+   248                           ;WMC.c: 281: disp1 = button();
+   249  0010F6  ECC2  F008         	call	_button	;wreg free
+   250  0010FA  6E0B               	movwf	main@disp1,c
+   251                           
+   252                           ;WMC.c: 282: PORTAbits.RA2 = 1;
+   253  0010FC  8480               	bsf	3968,2,c	;volatile
+   254                           
+   255                           ;WMC.c: 283: switch (disp1)
+   256  0010FE  D020               	goto	l969
+   257  001100                     l943:
+   258                           
+   259                           ;WMC.c: 286: PORTD = 0b00111111;
+   260  001100  0E3F               	movlw	63
+   261  001102  6E83               	movwf	3971,c	;volatile
+   262                           
+   263                           ;WMC.c: 287: break;
+   264  001104  D036               	goto	l971
+   265  001106                     l945:
+   266                           
+   267                           ;WMC.c: 290: {
+   268                           ;WMC.c: 291: PORTD = 0b00000110;
+   269  001106  0E06               	movlw	6
+   270  001108  6E83               	movwf	3971,c	;volatile
+   271  00110A                     l947:
+   272  00110A  B481               	btfsc	3969,2,c	;volatile
+   273  00110C  D032               	goto	l971
+   274  00110E  D7FB               	goto	l945
+   275  001110                     l949:
+   276                           
+   277                           ;WMC.c: 296: {
+   278                           ;WMC.c: 297: PORTD = 0b01011011;
+   279  001110  0E5B               	movlw	91
+   280  001112  6E83               	movwf	3971,c	;volatile
+   281  001114                     l951:
+   282  001114  B681               	btfsc	3969,3,c	;volatile
+   283  001116  D02D               	goto	l971
+   284  001118  D7FB               	goto	l949
+   285  00111A                     l953:
+   286                           
+   287                           ;WMC.c: 302: {
+   288                           ;WMC.c: 303: PORTD = 0b01001111;
+   289  00111A  0E4F               	movlw	79
+   290  00111C  6E83               	movwf	3971,c	;volatile
+   291  00111E                     l955:
+   292  00111E  B881               	btfsc	3969,4,c	;volatile
+   293  001120  D028               	goto	l971
+   294  001122  D7FB               	goto	l953
+   295  001124                     l957:
+   296                           
+   297                           ;WMC.c: 308: {
+   298                           ;WMC.c: 309: PORTD = 0b01100110;
+   299  001124  0E66               	movlw	102
+   300  001126  6E83               	movwf	3971,c	;volatile
+   301  001128                     l959:
+   302  001128  BA81               	btfsc	3969,5,c	;volatile
+   303  00112A  D023               	goto	l971
+   304  00112C  D7FB               	goto	l957
+   305  00112E                     l961:
+   306                           
+   307                           ;WMC.c: 313: inlet();
+   308  00112E  EC31  F009         	call	_inlet	;wreg free
+   309                           
+   310                           ;WMC.c: 314: break;
+   311  001132  D01F               	goto	l971
+   312  001134                     l963:
+   313                           
+   314                           ;WMC.c: 316: outlet();
+   315  001134  EC01  F009         	call	_outlet	;wreg free
+   316                           
+   317                           ;WMC.c: 317: break;
+   318  001138  D01C               	goto	l971
+   319  00113A                     l965:
+   320                           
+   321                           ;WMC.c: 319: motor();
+   322  00113A  EC13  F009         	call	_motor	;wreg free
+   323                           
+   324                           ;WMC.c: 323: }
+   325                           
+   326                           ;WMC.c: 322: break;
+   327                           
+   328                           ;WMC.c: 321: default:
+   329                           
+   330                           ;WMC.c: 320: break;
+   331  00113E  D019               	goto	l971
+   332  001140                     l969:
+   333  001140  500B               	movf	main@disp1,w,c
+   334                           
+   335                           ; Switch size 1, requested type "space"
+   336                           ; Number of cases is 8, Range of values is 48 to 55
+   337                           ; switch strategies available:
+   338                           ; Name         Instructions Cycles
+   339                           ; simple_byte           25    13 (average)
+   340                           ;	Chosen strategy is simple_byte
+   341  001142  0A30               	xorlw	48	; case 48
+   342  001144  B4D8               	btfsc	status,2,c
+   343  001146  D7DC               	goto	l943
+   344  001148  0A01               	xorlw	1	; case 49
+   345  00114A  B4D8               	btfsc	status,2,c
+   346  00114C  D7DE               	goto	l947
+   347  00114E  0A03               	xorlw	3	; case 50
+   348  001150  B4D8               	btfsc	status,2,c
+   349  001152  D7E0               	goto	l951
+   350  001154  0A01               	xorlw	1	; case 51
+   351  001156  B4D8               	btfsc	status,2,c
+   352  001158  D7E2               	goto	l955
+   353  00115A  0A07               	xorlw	7	; case 52
+   354  00115C  B4D8               	btfsc	status,2,c
+   355  00115E  D7E4               	goto	l959
+   356  001160  0A01               	xorlw	1	; case 53
+   357  001162  B4D8               	btfsc	status,2,c
+   358  001164  D7E4               	goto	l961
+   359  001166  0A03               	xorlw	3	; case 54
+   360  001168  B4D8               	btfsc	status,2,c
+   361  00116A  D7E4               	goto	l963
+   362  00116C  0A01               	xorlw	1	; case 55
+   363  00116E  B4D8               	btfsc	status,2,c
+   364  001170  D7E4               	goto	l965
+   365  001172                     l971:
+   366                           
+   367                           ;WMC.c: 324: _delay((unsigned long)((1)*(10000000/4000.0)));
+   368  001172  0E04               	movlw	4
+   369  001174  6E0A               	movwf	??_main& (0+255),c
+   370  001176  0E3E               	movlw	62
+   371  001178                     u267:
+   372  001178  2EE8               	decfsz	wreg,f,c
+   373  00117A  D7FE               	bra	u267
+   374  00117C  2E0A               	decfsz	??_main& (0+255),f,c
+   375  00117E  D7FC               	bra	u267
+   376                           
+   377                           ;WMC.c: 325: PORTAbits.RA2 = 0;
+   378  001180  9480               	bcf	3968,2,c	;volatile
+   379  001182  D7B9               	goto	l145
+   380  001184                     __end_of_main:
+   381                           	opt stack 0
+   382                           tblptru	equ	0xFF8
+   383                           postinc0	equ	0xFEE
+   384                           wreg	equ	0xFE8
+   385                           status	equ	0xFD8
+   386                           
+   387 ;; *************** function _outlet *****************
+   388 ;; Defined at:
+   389 ;;		line 198 in file "WMC.c"
+   390 ;; Parameters:    Size  Location     Type
+   391 ;;		None
+   392 ;; Auto vars:     Size  Location     Type
+   393 ;;		None
+   394 ;; Return value:  Size  Location     Type
+   395 ;;                  1    wreg      void 
+   396 ;; Registers used:
+   397 ;;		wreg, cstack
+   398 ;; Tracked objects:
+   399 ;;		On entry : 0/0
+   400 ;;		On exit  : 0/0
+   401 ;;		Unchanged: 0/0
+   402 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12  BANK13  BANK14  BANK15
+   403 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   404 ;;      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   405 ;;      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   406 ;;      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   407 ;;Total ram usage:        1 bytes
+   408 ;; Hardware stack levels used:    1
+   409 ;; Hardware stack levels required when called:    1
+   410 ;; This function calls:
+   411 ;;		_status
+   412 ;; This function is called by:
+   413 ;;		_main
+   414 ;; This function uses a non-reentrant model
+   415 ;;
+   416                           
+   417                           	psect	text1
+   418  001202                     __ptext1:
+   419                           	opt stack 0
+   420  001202                     _outlet:
+   421                           	opt stack 29
+   422                           
+   423                           ;WMC.c: 200: while(PORTBbits.RB1 == 0)
+   424                           
+   425                           ;incstack = 0
+   426  001202  D00C               	goto	l885
+   427  001204                     l124:
+   428                           
+   429                           ;WMC.c: 201: {
+   430                           ;WMC.c: 202: PORTAbits.RA2 = 0;
+   431  001204  9480               	bcf	3968,2,c	;volatile
+   432                           
+   433                           ;WMC.c: 203: PORTEbits.RE0 = 1;
+   434  001206  8084               	bsf	3972,0,c	;volatile
+   435                           
+   436                           ;WMC.c: 204: _delay((unsigned long)((1)*(10000000/4000.0)));
+   437  001208  0E04               	movlw	4
+   438  00120A  6E09               	movwf	??_outlet& (0+255),c
+   439  00120C  0E3E               	movlw	62
+   440  00120E                     u277:
+   441  00120E  2EE8               	decfsz	wreg,f,c
+   442  001210  D7FE               	bra	u277
+   443  001212  2E09               	decfsz	??_outlet& (0+255),f,c
+   444  001214  D7FC               	bra	u277
+   445                           
+   446                           ;WMC.c: 205: o = 1;
+   447  001216  800C               	bsf	_o/(0+8),_o& (0+7),c
+   448                           
+   449                           ;WMC.c: 206: status();
+   450  001218  EC07  F008         	call	_status	;wreg free
+   451  00121C                     l885:
+   452  00121C  A281               	btfss	3969,1,c	;volatile
+   453  00121E  D7F2               	goto	l124
+   454                           
+   455                           ;WMC.c: 207: }
+   456                           ;WMC.c: 208: o=0;
+   457  001220  900C               	bcf	_o/(0+8),_o& (0+7),c
+   458                           
+   459                           ;WMC.c: 209: PORTEbits.RE0 = 0;
+   460  001222  9084               	bcf	3972,0,c	;volatile
+   461  001224  0012               	return		;funcret
+   462  001226                     __end_of_outlet:
+   463                           	opt stack 0
+   464                           tblptru	equ	0xFF8
+   465                           postinc0	equ	0xFEE
+   466                           wreg	equ	0xFE8
+   467                           status	equ	0xFD8
+   468                           
+   469 ;; *************** function _motor *****************
+   470 ;; Defined at:
+   471 ;;		line 170 in file "WMC.c"
+   472 ;; Parameters:    Size  Location     Type
+   473 ;;		None
+   474 ;; Auto vars:     Size  Location     Type
+   475 ;;		None
+   476 ;; Return value:  Size  Location     Type
+   477 ;;                  1    wreg      void 
+   478 ;; Registers used:
+   479 ;;		wreg, cstack
+   480 ;; Tracked objects:
+   481 ;;		On entry : 0/0
+   482 ;;		On exit  : 0/0
+   483 ;;		Unchanged: 0/0
+   484 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12  BANK13  BANK14  BANK15
+   485 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   486 ;;      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   487 ;;      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   488 ;;      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   489 ;;Total ram usage:        1 bytes
+   490 ;; Hardware stack levels used:    1
+   491 ;; Hardware stack levels required when called:    1
+   492 ;; This function calls:
+   493 ;;		_status
+   494 ;; This function is called by:
+   495 ;;		_main
+   496 ;; This function uses a non-reentrant model
+   497 ;;
+   498                           
+   499                           	psect	text2
+   500  001226                     __ptext2:
+   501                           	opt stack 0
+   502  001226                     _motor:
+   503                           	opt stack 29
+   504                           
+   505                           ;WMC.c: 172: while(PORTAbits.RA5 == 0)
+   506                           
+   507                           ;incstack = 0
+   508  001226  D00C               	goto	l869
+   509  001228                     l112:
+   510                           
+   511                           ;WMC.c: 173: {
+   512                           ;WMC.c: 174: PORTAbits.RA2 = 0;
+   513  001228  9480               	bcf	3968,2,c	;volatile
+   514                           
+   515                           ;WMC.c: 175: PORTCbits.RC0 = 1;
+   516  00122A  8082               	bsf	3970,0,c	;volatile
+   517                           
+   518                           ;WMC.c: 176: _delay((unsigned long)((1)*(10000000/4000.0)));
+   519  00122C  0E04               	movlw	4
+   520  00122E  6E09               	movwf	??_motor& (0+255),c
+   521  001230  0E3E               	movlw	62
+   522  001232                     u287:
+   523  001232  2EE8               	decfsz	wreg,f,c
+   524  001234  D7FE               	bra	u287
+   525  001236  2E09               	decfsz	??_motor& (0+255),f,c
+   526  001238  D7FC               	bra	u287
+   527                           
+   528                           ;WMC.c: 177: m =1;
+   529  00123A  840C               	bsf	_m/(0+8),_m& (0+7),c
+   530                           
+   531                           ;WMC.c: 178: status();
+   532  00123C  EC07  F008         	call	_status	;wreg free
+   533  001240                     l869:
+   534  001240  AA80               	btfss	3968,5,c	;volatile
+   535  001242  D7F2               	goto	l112
+   536                           
+   537                           ;WMC.c: 179: }
+   538                           ;WMC.c: 180: m=0;
+   539  001244  940C               	bcf	_m/(0+8),_m& (0+7),c
+   540                           
+   541                           ;WMC.c: 181: PORTCbits.RC0 = 0;
+   542  001246  9082               	bcf	3970,0,c	;volatile
+   543  001248  0012               	return		;funcret
+   544  00124A                     __end_of_motor:
+   545                           	opt stack 0
+   546                           tblptru	equ	0xFF8
+   547                           postinc0	equ	0xFEE
+   548                           wreg	equ	0xFE8
+   549                           status	equ	0xFD8
+   550                           
+   551 ;; *************** function _inlet *****************
+   552 ;; Defined at:
+   553 ;;		line 185 in file "WMC.c"
+   554 ;; Parameters:    Size  Location     Type
+   555 ;;		None
+   556 ;; Auto vars:     Size  Location     Type
+   557 ;;		None
+   558 ;; Return value:  Size  Location     Type
+   559 ;;                  1    wreg      void 
+   560 ;; Registers used:
+   561 ;;		wreg, cstack
+   562 ;; Tracked objects:
+   563 ;;		On entry : 0/0
+   564 ;;		On exit  : 0/0
+   565 ;;		Unchanged: 0/0
+   566 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12  BANK13  BANK14  BANK15
+   567 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   568 ;;      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   569 ;;      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   570 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   571 ;;Total ram usage:        0 bytes
+   572 ;; Hardware stack levels used:    1
+   573 ;; Hardware stack levels required when called:    1
+   574 ;; This function calls:
+   575 ;;		_status
+   576 ;; This function is called by:
+   577 ;;		_main
+   578 ;; This function uses a non-reentrant model
+   579 ;;
+   580                           
+   581                           	psect	text3
+   582  001262                     __ptext3:
+   583                           	opt stack 0
+   584  001262                     _inlet:
+   585                           	opt stack 29
+   586                           
+   587                           ;WMC.c: 187: while(PORTBbits.RB0 == 0)
+   588                           
+   589                           ;incstack = 0
+   590  001262  D004               	goto	l875
+   591  001264                     l118:
+   592                           
+   593                           ;WMC.c: 188: {
+   594                           ;WMC.c: 189: PORTAbits.RA2 = 0;
+   595  001264  9480               	bcf	3968,2,c	;volatile
+   596                           
+   597                           ;WMC.c: 190: i = 1;
+   598  001266  820C               	bsf	_i/(0+8),_i& (0+7),c
+   599                           
+   600                           ;WMC.c: 191: status();
+   601  001268  EC07  F008         	call	_status	;wreg free
+   602  00126C                     l875:
+   603  00126C  A081               	btfss	3969,0,c	;volatile
+   604  00126E  D7FA               	goto	l118
+   605                           
+   606                           ;WMC.c: 192: }
+   607                           ;WMC.c: 193: i = 0;
+   608  001270  920C               	bcf	_i/(0+8),_i& (0+7),c
+   609  001272  0012               	return		;funcret
+   610  001274                     __end_of_inlet:
+   611                           	opt stack 0
+   612                           tblptru	equ	0xFF8
+   613                           postinc0	equ	0xFEE
+   614                           wreg	equ	0xFE8
+   615                           status	equ	0xFD8
+   616                           
+   617 ;; *************** function _status *****************
+   618 ;; Defined at:
+   619 ;;		line 113 in file "WMC.c"
+   620 ;; Parameters:    Size  Location     Type
+   621 ;;		None
+   622 ;; Auto vars:     Size  Location     Type
+   623 ;;		None
+   624 ;; Return value:  Size  Location     Type
+   625 ;;                  1    wreg      void 
+   626 ;; Registers used:
+   627 ;;		wreg
+   628 ;; Tracked objects:
+   629 ;;		On entry : 0/0
+   630 ;;		On exit  : 0/0
+   631 ;;		Unchanged: 0/0
+   632 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12  BANK13  BANK14  BANK15
+   633 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   634 ;;      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   635 ;;      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   636 ;;      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   637 ;;Total ram usage:        1 bytes
+   638 ;; Hardware stack levels used:    1
+   639 ;; This function calls:
+   640 ;;		Nothing
+   641 ;; This function is called by:
+   642 ;;		_motor
+   643 ;;		_inlet
+   644 ;;		_outlet
+   645 ;; This function uses a non-reentrant model
+   646 ;;
+   647                           
+   648                           	psect	text4
+   649  00100E                     __ptext4:
+   650                           	opt stack 0
+   651  00100E                     _status:
+   652                           	opt stack 29
+   653                           
+   654                           ;WMC.c: 116: if(i == 1)
+   655                           
+   656                           ;incstack = 0
+   657  00100E  A20C               	btfss	_i/(0+8),_i& (0+7),c
+   658  001010  D009               	goto	l100
+   659                           
+   660                           ;WMC.c: 117: {
+   661                           ;WMC.c: 118: PORTDbits.RD0 = 1;
+   662  001012  8083               	bsf	3971,0,c	;volatile
+   663                           
+   664                           ;WMC.c: 119: _delay((unsigned long)((1)*(10000000/4000.0)));
+   665  001014  0E04               	movlw	4
+   666  001016  6E08               	movwf	??_status& (0+255),c
+   667  001018  0E3E               	movlw	62
+   668  00101A                     u297:
+   669  00101A  2EE8               	decfsz	wreg,f,c
+   670  00101C  D7FE               	bra	u297
+   671  00101E  2E08               	decfsz	??_status& (0+255),f,c
+   672  001020  D7FC               	bra	u297
+   673                           
+   674                           ;WMC.c: 120: }
+   675  001022  D008               	goto	l793
+   676  001024                     l100:
+   677                           
+   678                           ;WMC.c: 121: else
+   679                           ;WMC.c: 122: {
+   680                           ;WMC.c: 123: PORTDbits.RD0 = 0;
+   681  001024  9083               	bcf	3971,0,c	;volatile
+   682                           
+   683                           ;WMC.c: 124: _delay((unsigned long)((1)*(10000000/4000.0)));
+   684  001026  0E04               	movlw	4
+   685  001028  6E08               	movwf	??_status& (0+255),c
+   686  00102A  0E3E               	movlw	62
+   687  00102C                     u307:
+   688  00102C  2EE8               	decfsz	wreg,f,c
+   689  00102E  D7FE               	bra	u307
+   690  001030  2E08               	decfsz	??_status& (0+255),f,c
+   691  001032  D7FC               	bra	u307
+   692  001034                     l793:
+   693                           
+   694                           ;WMC.c: 125: }
+   695                           ;WMC.c: 127: if(o == 1)
+   696  001034  A00C               	btfss	_o/(0+8),_o& (0+7),c
+   697  001036  D011               	goto	l102
+   698                           
+   699                           ;WMC.c: 128: {
+   700                           ;WMC.c: 129: PORTDbits.RD1 = 1;
+   701  001038  8283               	bsf	3971,1,c	;volatile
+   702                           
+   703                           ;WMC.c: 130: _delay((unsigned long)((1)*(10000000/4000.0)));
+   704  00103A  0E04               	movlw	4
+   705  00103C  6E08               	movwf	??_status& (0+255),c
+   706  00103E  0E3E               	movlw	62
+   707  001040                     u317:
+   708  001040  2EE8               	decfsz	wreg,f,c
+   709  001042  D7FE               	bra	u317
+   710  001044  2E08               	decfsz	??_status& (0+255),f,c
+   711  001046  D7FC               	bra	u317
+   712                           
+   713                           ;WMC.c: 131: PORTDbits.RD4 = 1;
+   714  001048  8883               	bsf	3971,4,c	;volatile
+   715                           
+   716                           ;WMC.c: 132: _delay((unsigned long)((1)*(10000000/4000.0)));
+   717  00104A  0E04               	movlw	4
+   718  00104C  6E08               	movwf	??_status& (0+255),c
+   719  00104E  0E3E               	movlw	62
+   720  001050                     u327:
+   721  001050  2EE8               	decfsz	wreg,f,c
+   722  001052  D7FE               	bra	u327
+   723  001054  2E08               	decfsz	??_status& (0+255),f,c
+   724  001056  D7FC               	bra	u327
+   725                           
+   726                           ;WMC.c: 133: }
+   727  001058  D010               	goto	l805
+   728  00105A                     l102:
+   729                           
+   730                           ;WMC.c: 134: else
+   731                           ;WMC.c: 135: {
+   732                           ;WMC.c: 136: PORTDbits.RD1 = 0;
+   733  00105A  9283               	bcf	3971,1,c	;volatile
+   734                           
+   735                           ;WMC.c: 137: _delay((unsigned long)((1)*(10000000/4000.0)));
+   736  00105C  0E04               	movlw	4
+   737  00105E  6E08               	movwf	??_status& (0+255),c
+   738  001060  0E3E               	movlw	62
+   739  001062                     u337:
+   740  001062  2EE8               	decfsz	wreg,f,c
+   741  001064  D7FE               	bra	u337
+   742  001066  2E08               	decfsz	??_status& (0+255),f,c
+   743  001068  D7FC               	bra	u337
+   744                           
+   745                           ;WMC.c: 138: PORTDbits.RD4 = 0;
+   746  00106A  9883               	bcf	3971,4,c	;volatile
+   747                           
+   748                           ;WMC.c: 139: _delay((unsigned long)((1)*(10000000/4000.0)));
+   749  00106C  0E04               	movlw	4
+   750  00106E  6E08               	movwf	??_status& (0+255),c
+   751  001070  0E3E               	movlw	62
+   752  001072                     u347:
+   753  001072  2EE8               	decfsz	wreg,f,c
+   754  001074  D7FE               	bra	u347
+   755  001076  2E08               	decfsz	??_status& (0+255),f,c
+   756  001078  D7FC               	bra	u347
+   757  00107A                     l805:
+   758                           
+   759                           ;WMC.c: 140: }
+   760                           ;WMC.c: 142: if(i ==0 && m == 0 && o == 0)
+   761  00107A  A20C               	btfss	_i/(0+8),_i& (0+7),c
+   762  00107C  B40C               	btfsc	_m/(0+8),_m& (0+7),c
+   763  00107E  D00B               	goto	l104
+   764  001080  B00C               	btfsc	_o/(0+8),_o& (0+7),c
+   765  001082  D009               	goto	l104
+   766                           
+   767                           ;WMC.c: 143: {
+   768                           ;WMC.c: 144: PORTDbits.RD2 = 1;
+   769  001084  8483               	bsf	3971,2,c	;volatile
+   770                           
+   771                           ;WMC.c: 145: _delay((unsigned long)((1)*(10000000/4000.0)));
+   772  001086  0E04               	movlw	4
+   773  001088  6E08               	movwf	??_status& (0+255),c
+   774  00108A  0E3E               	movlw	62
+   775  00108C                     u357:
+   776  00108C  2EE8               	decfsz	wreg,f,c
+   777  00108E  D7FE               	bra	u357
+   778  001090  2E08               	decfsz	??_status& (0+255),f,c
+   779  001092  D7FC               	bra	u357
+   780                           
+   781                           ;WMC.c: 146: }
+   782  001094  D008               	goto	l817
+   783  001096                     l104:
+   784                           
+   785                           ;WMC.c: 147: else
+   786                           ;WMC.c: 148: {
+   787                           ;WMC.c: 149: PORTDbits.RD2 = 0;
+   788  001096  9483               	bcf	3971,2,c	;volatile
+   789                           
+   790                           ;WMC.c: 150: _delay((unsigned long)((1)*(10000000/4000.0)));
+   791  001098  0E04               	movlw	4
+   792  00109A  6E08               	movwf	??_status& (0+255),c
+   793  00109C  0E3E               	movlw	62
+   794  00109E                     u367:
+   795  00109E  2EE8               	decfsz	wreg,f,c
+   796  0010A0  D7FE               	bra	u367
+   797  0010A2  2E08               	decfsz	??_status& (0+255),f,c
+   798  0010A4  D7FC               	bra	u367
+   799  0010A6                     l817:
+   800                           
+   801                           ;WMC.c: 151: }
+   802                           ;WMC.c: 153: if(m == 1)
+   803  0010A6  A40C               	btfss	_m/(0+8),_m& (0+7),c
+   804  0010A8  D011               	goto	l106
+   805                           
+   806                           ;WMC.c: 154: {
+   807                           ;WMC.c: 155: PORTDbits.RD3 = 1;
+   808  0010AA  8683               	bsf	3971,3,c	;volatile
+   809                           
+   810                           ;WMC.c: 156: _delay((unsigned long)((1)*(10000000/4000.0)));
+   811  0010AC  0E04               	movlw	4
+   812  0010AE  6E08               	movwf	??_status& (0+255),c
+   813  0010B0  0E3E               	movlw	62
+   814  0010B2                     u377:
+   815  0010B2  2EE8               	decfsz	wreg,f,c
+   816  0010B4  D7FE               	bra	u377
+   817  0010B6  2E08               	decfsz	??_status& (0+255),f,c
+   818  0010B8  D7FC               	bra	u377
+   819                           
+   820                           ;WMC.c: 157: PORTDbits.RD5 = 1;
+   821  0010BA  8A83               	bsf	3971,5,c	;volatile
+   822                           
+   823                           ;WMC.c: 158: _delay((unsigned long)((1)*(10000000/4000.0)));
+   824  0010BC  0E04               	movlw	4
+   825  0010BE  6E08               	movwf	??_status& (0+255),c
+   826  0010C0  0E3E               	movlw	62
+   827  0010C2                     u387:
+   828  0010C2  2EE8               	decfsz	wreg,f,c
+   829  0010C4  D7FE               	bra	u387
+   830  0010C6  2E08               	decfsz	??_status& (0+255),f,c
+   831  0010C8  D7FC               	bra	u387
+   832                           
+   833                           ;WMC.c: 159: }
+   834  0010CA  0012               	return	
+   835  0010CC                     l106:
+   836                           
+   837                           ;WMC.c: 160: else
+   838                           ;WMC.c: 161: {
+   839                           ;WMC.c: 162: PORTDbits.RD3 = 0;
+   840  0010CC  9683               	bcf	3971,3,c	;volatile
+   841                           
+   842                           ;WMC.c: 163: _delay((unsigned long)((1)*(10000000/4000.0)));
+   843  0010CE  0E04               	movlw	4
+   844  0010D0  6E08               	movwf	??_status& (0+255),c
+   845  0010D2  0E3E               	movlw	62
+   846  0010D4                     u397:
+   847  0010D4  2EE8               	decfsz	wreg,f,c
+   848  0010D6  D7FE               	bra	u397
+   849  0010D8  2E08               	decfsz	??_status& (0+255),f,c
+   850  0010DA  D7FC               	bra	u397
+   851                           
+   852                           ;WMC.c: 164: PORTDbits.RD5 = 0;
+   853  0010DC  9A83               	bcf	3971,5,c	;volatile
+   854                           
+   855                           ;WMC.c: 165: _delay((unsigned long)((1)*(10000000/4000.0)));
+   856  0010DE  0E04               	movlw	4
+   857  0010E0  6E08               	movwf	??_status& (0+255),c
+   858  0010E2  0E3E               	movlw	62
+   859  0010E4                     u407:
+   860  0010E4  2EE8               	decfsz	wreg,f,c
+   861  0010E6  D7FE               	bra	u407
+   862  0010E8  2E08               	decfsz	??_status& (0+255),f,c
+   863  0010EA  D7FC               	bra	u407
+   864  0010EC  0012               	return	
+   865  0010EE                     __end_of_status:
+   866                           	opt stack 0
+   867                           tblptru	equ	0xFF8
+   868                           postinc0	equ	0xFEE
+   869                           wreg	equ	0xFE8
+   870                           status	equ	0xFD8
+   871                           
+   872 ;; *************** function _init_ports *****************
+   873 ;; Defined at:
+   874 ;;		line 19 in file "WMC.c"
+   875 ;; Parameters:    Size  Location     Type
+   876 ;;		None
+   877 ;; Auto vars:     Size  Location     Type
+   878 ;;		None
+   879 ;; Return value:  Size  Location     Type
+   880 ;;                  1    wreg      void 
+   881 ;; Registers used:
+   882 ;;		wreg, status,2
+   883 ;; Tracked objects:
+   884 ;;		On entry : 0/0
+   885 ;;		On exit  : 0/0
+   886 ;;		Unchanged: 0/0
+   887 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12  BANK13  BANK14  BANK15
+   888 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   889 ;;      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   890 ;;      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   891 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   892 ;;Total ram usage:        0 bytes
+   893 ;; Hardware stack levels used:    1
+   894 ;; This function calls:
+   895 ;;		Nothing
+   896 ;; This function is called by:
+   897 ;;		_main
+   898 ;; This function uses a non-reentrant model
+   899 ;;
+   900                           
+   901                           	psect	text5
+   902  0011D6                     __ptext5:
+   903                           	opt stack 0
+   904  0011D6                     _init_ports:
+   905                           	opt stack 30
+   906                           
+   907                           ;WMC.c: 21: PORTA = 0;
+   908                           
+   909                           ;incstack = 0
+   910  0011D6  0E00               	movlw	0
+   911  0011D8  6E80               	movwf	3968,c	;volatile
+   912                           
+   913                           ;WMC.c: 22: TRISA = 0b11100011;
+   914  0011DA  0EE3               	movlw	227
+   915  0011DC  6E92               	movwf	3986,c	;volatile
+   916                           
+   917                           ;WMC.c: 25: PORTB = 0;
+   918  0011DE  0E00               	movlw	0
+   919  0011E0  6E81               	movwf	3969,c	;volatile
+   920                           
+   921                           ;WMC.c: 26: TRISB = 0b00111111;
+   922  0011E2  0E3F               	movlw	63
+   923  0011E4  6E93               	movwf	3987,c	;volatile
+   924                           
+   925                           ;WMC.c: 27: RBPU = 0;
+   926  0011E6  9EF1               	bcf	intcon2,7,c	;volatile
+   927                           
+   928                           ;WMC.c: 29: TRISD = 0;
+   929  0011E8  0E00               	movlw	0
+   930  0011EA  6E95               	movwf	3989,c	;volatile
+   931                           
+   932                           ;WMC.c: 30: PORTD = 0;
+   933  0011EC  0E00               	movlw	0
+   934  0011EE  6E83               	movwf	3971,c	;volatile
+   935                           
+   936                           ;WMC.c: 32: TRISC = 0;
+   937  0011F0  0E00               	movlw	0
+   938  0011F2  6E94               	movwf	3988,c	;volatile
+   939                           
+   940                           ;WMC.c: 33: PORTC = 0;
+   941  0011F4  0E00               	movlw	0
+   942  0011F6  6E82               	movwf	3970,c	;volatile
+   943                           
+   944                           ;WMC.c: 35: TRISE = 0;
+   945  0011F8  0E00               	movlw	0
+   946  0011FA  6E96               	movwf	3990,c	;volatile
+   947                           
+   948                           ;WMC.c: 36: PORTE = 0;
+   949  0011FC  0E00               	movlw	0
+   950  0011FE  6E84               	movwf	3972,c	;volatile
+   951  001200  0012               	return		;funcret
+   952  001202                     __end_of_init_ports:
+   953                           	opt stack 0
+   954                           tblptru	equ	0xFF8
+   955                           intcon2	equ	0xFF1
+   956                           postinc0	equ	0xFEE
+   957                           wreg	equ	0xFE8
+   958                           status	equ	0xFD8
+   959                           
+   960 ;; *************** function _init_adc *****************
+   961 ;; Defined at:
+   962 ;;		line 81 in file "WMC.c"
+   963 ;; Parameters:    Size  Location     Type
+   964 ;;		None
+   965 ;; Auto vars:     Size  Location     Type
+   966 ;;		None
+   967 ;; Return value:  Size  Location     Type
+   968 ;;                  1    wreg      void 
+   969 ;; Registers used:
+   970 ;;		wreg, status,2
+   971 ;; Tracked objects:
+   972 ;;		On entry : 0/0
+   973 ;;		On exit  : 0/0
+   974 ;;		Unchanged: 0/0
+   975 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12  BANK13  BANK14  BANK15
+   976 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   977 ;;      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   978 ;;      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   979 ;;      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+   980 ;;Total ram usage:        0 bytes
+   981 ;; Hardware stack levels used:    1
+   982 ;; This function calls:
+   983 ;;		Nothing
+   984 ;; This function is called by:
+   985 ;;		_main
+   986 ;; This function uses a non-reentrant model
+   987 ;;
+   988                           
+   989                           	psect	text6
+   990  001274                     __ptext6:
+   991                           	opt stack 0
+   992  001274                     _init_adc:
+   993                           	opt stack 30
+   994                           
+   995                           ;WMC.c: 83: ADCON1 = 0b00001011;
+   996                           
+   997                           ;incstack = 0
+   998  001274  0E0B               	movlw	11
+   999  001276  6EC1               	movwf	4033,c	;volatile
+  1000                           
+  1001                           ;WMC.c: 84: ADCON2 = 0b10000001;
+  1002  001278  0E81               	movlw	129
+  1003  00127A  6EC0               	movwf	4032,c	;volatile
+  1004                           
+  1005                           ;WMC.c: 85: CMCON =0x07;
+  1006  00127C  0E07               	movlw	7
+  1007  00127E  6EB4               	movwf	4020,c	;volatile
+  1008  001280  0012               	return		;funcret
+  1009  001282                     __end_of_init_adc:
+  1010                           	opt stack 0
+  1011                           tblptru	equ	0xFF8
+  1012                           intcon2	equ	0xFF1
+  1013                           postinc0	equ	0xFEE
+  1014                           wreg	equ	0xFE8
+  1015                           status	equ	0xFD8
+  1016                           
+  1017 ;; *************** function _button *****************
+  1018 ;; Defined at:
+  1019 ;;		line 40 in file "WMC.c"
+  1020 ;; Parameters:    Size  Location     Type
+  1021 ;;		None
+  1022 ;; Auto vars:     Size  Location     Type
+  1023 ;;  push            1    1[COMRAM] unsigned char 
+  1024 ;; Return value:  Size  Location     Type
+  1025 ;;                  1    wreg      unsigned char 
+  1026 ;; Registers used:
+  1027 ;;		wreg, status,2
+  1028 ;; Tracked objects:
+  1029 ;;		On entry : 0/0
+  1030 ;;		On exit  : 0/0
+  1031 ;;		Unchanged: 0/0
+  1032 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12  BANK13  BANK14  BANK15
+  1033 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+  1034 ;;      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+  1035 ;;      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+  1036 ;;      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0       0       0       0
+  1037 ;;Total ram usage:        2 bytes
+  1038 ;; Hardware stack levels used:    1
+  1039 ;; This function calls:
+  1040 ;;		Nothing
+  1041 ;; This function is called by:
+  1042 ;;		_main
+  1043 ;; This function uses a non-reentrant model
+  1044 ;;
+  1045                           
+  1046                           	psect	text7
+  1047  001184                     __ptext7:
+  1048                           	opt stack 0
+  1049  001184                     _button:
+  1050                           	opt stack 30
+  1051                           
+  1052                           ;WMC.c: 42: PORTD = 0;
+  1053                           
+  1054                           ;incstack = 0
+  1055  001184  0E00               	movlw	0
+  1056  001186  6E83               	movwf	3971,c	;volatile
+  1057                           
+  1058                           ;WMC.c: 43: char push;
+  1059                           ;WMC.c: 44: if(PORTBbits.RB2 == 0)
+  1060  001188  B481               	btfsc	3969,2,c	;volatile
+  1061  00118A  D002               	goto	l68
+  1062                           
+  1063                           ;WMC.c: 45: {
+  1064                           ;WMC.c: 46: push = '1';
+  1065  00118C  0E31               	movlw	49
+  1066  00118E  D019               	goto	L7
+  1067  001190                     l68:
+  1068                           
+  1069                           ;WMC.c: 48: else if(PORTBbits.RB3 == 0)
+  1070  001190  B681               	btfsc	3969,3,c	;volatile
+  1071  001192  D002               	goto	l70
+  1072                           
+  1073                           ;WMC.c: 49: {
+  1074                           ;WMC.c: 50: push = '2';
+  1075  001194  0E32               	movlw	50
+  1076  001196  D015               	goto	L7
+  1077  001198                     l70:
+  1078                           
+  1079                           ;WMC.c: 52: else if(PORTBbits.RB4 == 0)
+  1080  001198  B881               	btfsc	3969,4,c	;volatile
+  1081  00119A  D002               	goto	l72
+  1082                           
+  1083                           ;WMC.c: 53: {
+  1084                           ;WMC.c: 54: push = '3';
+  1085  00119C  0E33               	movlw	51
+  1086  00119E  D011               	goto	L7
+  1087  0011A0                     l72:
+  1088                           
+  1089                           ;WMC.c: 56: else if(PORTBbits.RB5 == 0)
+  1090  0011A0  BA81               	btfsc	3969,5,c	;volatile
+  1091  0011A2  D002               	goto	l74
+  1092                           
+  1093                           ;WMC.c: 57: {
+  1094                           ;WMC.c: 58: push = '4';
+  1095  0011A4  0E34               	movlw	52
+  1096  0011A6  D00D               	goto	L7
+  1097  0011A8                     l74:
+  1098                           
+  1099                           ;WMC.c: 60: else if(PORTBbits.RB0 == 0)
+  1100  0011A8  B081               	btfsc	3969,0,c	;volatile
+  1101  0011AA  D002               	goto	l76
+  1102                           
+  1103                           ;WMC.c: 61: {
+  1104                           ;WMC.c: 62: push = '5';
+  1105  0011AC  0E35               	movlw	53
+  1106  0011AE  D009               	goto	L7
+  1107  0011B0                     l76:
+  1108                           
+  1109                           ;WMC.c: 64: else if(PORTBbits.RB1 == 0)
+  1110  0011B0  B281               	btfsc	3969,1,c	;volatile
+  1111  0011B2  D002               	goto	l78
+  1112                           
+  1113                           ;WMC.c: 65: {
+  1114                           ;WMC.c: 66: push = '6';
+  1115  0011B4  0E36               	movlw	54
+  1116  0011B6  D005               	goto	L7
+  1117  0011B8                     l78:
+  1118                           
+  1119                           ;WMC.c: 68: else if(PORTAbits.RA5 == 0)
+  1120  0011B8  BA80               	btfsc	3968,5,c	;volatile
+  1121  0011BA  D002               	goto	l851
+  1122                           
+  1123                           ;WMC.c: 69: {
+  1124                           ;WMC.c: 70: push = '7';
+  1125  0011BC  0E37               	movlw	55
+  1126  0011BE  D001               	goto	L7
+  1127  0011C0                     l851:
+  1128                           
+  1129                           ;WMC.c: 72: else
+  1130                           ;WMC.c: 73: {
+  1131                           ;WMC.c: 74: push = '0';
+  1132  0011C0  0E30               	movlw	48
+  1133  0011C2                     L7:
+  1134  0011C2  6E09               	movwf	button@push,c
+  1135                           
+  1136                           ;WMC.c: 75: }
+  1137                           ;WMC.c: 76: _delay((unsigned long)((1)*(10000000/4000.0)));
+  1138  0011C4  0E04               	movlw	4
+  1139  0011C6  6E08               	movwf	??_button& (0+255),c
+  1140  0011C8  0E3E               	movlw	62
+  1141  0011CA                     u417:
+  1142  0011CA  2EE8               	decfsz	wreg,f,c
+  1143  0011CC  D7FE               	bra	u417
+  1144  0011CE  2E08               	decfsz	??_button& (0+255),f,c
+  1145  0011D0  D7FC               	bra	u417
+  1146                           
+  1147                           ;WMC.c: 77: return push;
+  1148  0011D2  5009               	movf	button@push,w,c
+  1149  0011D4  0012               	return	
+  1150  0011D6                     __end_of_button:
+  1151                           	opt stack 0
+  1152                           tblptru	equ	0xFF8
+  1153                           intcon2	equ	0xFF1
+  1154                           postinc0	equ	0xFEE
+  1155                           wreg	equ	0xFE8
+  1156                           status	equ	0xFD8
+  1157                           tblptru	equ	0xFF8
+  1158                           intcon2	equ	0xFF1
+  1159                           postinc0	equ	0xFEE
+  1160                           wreg	equ	0xFE8
+  1161                           status	equ	0xFD8
+  1162                           
+  1163                           	psect	rparam
+  1164  0000                     tblptru	equ	0xFF8
+  1165                           intcon2	equ	0xFF1
+  1166                           postinc0	equ	0xFEE
+  1167                           wreg	equ	0xFE8
+  1168                           status	equ	0xFD8
+
+
+Data Sizes:
+    Strings     0
+    Constant    11
+    Data        0
+    BSS         7
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMRAM          127      4      12
+    BANK0           128      0       0
+    BANK1           256      0       0
+    BANK2           256      0       0
+    BANK3           256      0       0
+    BANK4           256      0       0
+    BANK5           256      0       0
+    BANK6           256      0       0
+    BANK7           256      0       0
+    BANK8           256      0       0
+    BANK9           256      0       0
+    BANK10          256      0       0
+    BANK11          256      0       0
+    BANK12          256      0       0
+    BANK13          256      0       0
+    BANK14          256      0       0
+    BANK15          128      0       0
+
+Pointer List with Targets:
+
+    None.
+
+Critical Paths under _main in COMRAM
+
+    _main->_button
+    _main->_motor
+    _main->_outlet
+    _outlet->_status
+    _motor->_status
+    _inlet->_status
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _main in BANK5
+
+    None.
+
+Critical Paths under _main in BANK6
+
+    None.
+
+Critical Paths under _main in BANK7
+
+    None.
+
+Critical Paths under _main in BANK8
+
+    None.
+
+Critical Paths under _main in BANK9
+
+    None.
+
+Critical Paths under _main in BANK10
+
+    None.
+
+Critical Paths under _main in BANK11
+
+    None.
+
+Critical Paths under _main in BANK12
+
+    None.
+
+Critical Paths under _main in BANK13
+
+    None.
+
+Critical Paths under _main in BANK14
+
+    None.
+
+Critical Paths under _main in BANK15
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 4     4      0      30
+                                              2 COMRAM     2     2      0
+                             _button
+                           _init_adc
+                         _init_ports
+                              _inlet
+                              _motor
+                             _outlet
+ ---------------------------------------------------------------------------------
+ (1) _outlet                                               1     1      0       0
+                                              1 COMRAM     1     1      0
+                             _status
+ ---------------------------------------------------------------------------------
+ (1) _motor                                                1     1      0       0
+                                              1 COMRAM     1     1      0
+                             _status
+ ---------------------------------------------------------------------------------
+ (1) _inlet                                                0     0      0       0
+                             _status
+ ---------------------------------------------------------------------------------
+ (2) _status                                               1     1      0       0
+                                              0 COMRAM     1     1      0
+ ---------------------------------------------------------------------------------
+ (1) _init_ports                                           0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _init_adc                                             0     0      0       0
+ ---------------------------------------------------------------------------------
+ (1) _button                                               2     2      0      15
+                                              0 COMRAM     2     2      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 2
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _button
+   _init_adc
+   _init_ports
+   _inlet
+     _status
+   _motor
+     _status
+   _outlet
+     _status
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BIGRAM             F7F      0       0      37        0.0%
+EEDATA             400      0       0       0        0.0%
+BITBANK14          100      0       0      32        0.0%
+BANK14             100      0       0      33        0.0%
+BITBANK13          100      0       0      30        0.0%
+BANK13             100      0       0      31        0.0%
+BITBANK12          100      0       0      28        0.0%
+BANK12             100      0       0      29        0.0%
+BITBANK11          100      0       0      26        0.0%
+BANK11             100      0       0      27        0.0%
+BITBANK10          100      0       0      24        0.0%
+BANK10             100      0       0      25        0.0%
+BITBANK9           100      0       0      22        0.0%
+BANK9              100      0       0      23        0.0%
+BITBANK8           100      0       0      20        0.0%
+BANK8              100      0       0      21        0.0%
+BITBANK7           100      0       0      18        0.0%
+BANK7              100      0       0      19        0.0%
+BITBANK6           100      0       0      16        0.0%
+BANK6              100      0       0      17        0.0%
+BITBANK5           100      0       0      14        0.0%
+BANK5              100      0       0      15        0.0%
+BITBANK4           100      0       0      12        0.0%
+BANK4              100      0       0      13        0.0%
+BITBANK3           100      0       0      10        0.0%
+BANK3              100      0       0      11        0.0%
+BITBANK2           100      0       0       8        0.0%
+BANK2              100      0       0       9        0.0%
+BITBANK1           100      0       0       6        0.0%
+BANK1              100      0       0       7        0.0%
+BITBANK15           80      0       0      35        0.0%
+BANK15              80      0       0      36        0.0%
+BITBANK0            80      0       0       4        0.0%
+BANK0               80      0       0       5        0.0%
+BITCOMRAM           7F      0       1       0        0.8%
+COMRAM              7F      4       C       1        9.4%
+BITSFR               0      0       0     200        0.0%
+SFR                  0      0       0     200        0.0%
+STACK                0      0       0       2        0.0%
+NULL                 0      0       0       0        0.0%
+ABS                  0      0       C      34        0.0%
+DATA                 0      0       C       3        0.0%
+CODE                 0      0       0       0        0.0%
+
+
+Microchip Technology PIC18 Macro Assembler V1.41 build -162212810 
+Symbol Table                                                                                   Fri Apr 28 14:15:30 2017
+
+                      _i 0061                        _m 0062                        _o 0060  
+                     l70 1198                       l72 11A0                       l74 11A8  
+                     l76 11B0                       l68 1190                       l78 11B8  
+                    l100 1024                      l102 105A                      l104 1096  
+                    l112 1228                      l106 10CC                      l124 1204  
+                    l118 1264                      l145 10F6                      l805 107A  
+                    l817 10A6                      l851 11C0                      l951 1114  
+                    l943 1100                      l793 1034                      l961 112E  
+                    l953 111A                      l945 1106                      l875 126C  
+                    l963 1134                      l955 111E                      l947 110A  
+                    l971 1172                      l869 1240                      l885 121C  
+                    l965 113A                      l957 1124                      l949 1110  
+                    l959 1128                      l969 1140                      u307 102C  
+                    u317 1040                      u407 10E4                      u327 1050  
+                    u417 11CA                      u337 1062                      u347 1072  
+                    u267 1178                      u357 108C                      u277 120E  
+                    u367 109E                      u287 1232                      u377 10B2  
+                    u297 101A                      u387 10C2                      u397 10D4  
+                    wreg 000FE8                     _RBPU 007F8F                     _main 10EE  
+                   start 0000             ___param_bank 000000          __end_of_SegCode 100C  
+                  ?_main 0008                    _CMCON 000FB4                    _PORTA 000F80  
+                  _PORTB 000F81                    _PORTC 000F82                    _PORTD 000F83  
+                  _PORTE 000F84                    _TRISA 000F92                    _TRISB 000F93  
+                  _TRISC 000F94                    _TRISD 000F95                    _TRISE 000F96  
+                  _inlet 1262                    _motor 1226           __pbitbssCOMRAM 0060  
+                  status 000FD8          __initialization 124A             __end_of_main 1184  
+                 ??_main 000A            __activetblptr 000002                   _ADCON0 000FC2  
+                 _ADCON1 000FC1                   _ADCON2 000FC0                   ?_inlet 0008  
+                 _ADRESH 000FC4                   _ADRESL 000FC3                   ?_motor 0008  
+       __end_of_init_adc 1282                   _button 1184                   clear_0 1252  
+                 _result 0005                   _outlet 1202                   _status 100E  
+           __mediumconst 0000                   tblptru 000FF8               __accesstop 0080  
+__end_of__initialization 1258            ___rparam_used 000001           __pcstackCOMRAM 0008  
+          __end_of_inlet 1274            __end_of_motor 124A                  ??_inlet 0009  
+                ??_motor 0009                  ?_button 0008                  ?_outlet 0008  
+                ?_status 0008                ?_init_adc 0008                  _SegCode 1001  
+                __Hparam 0000                  _Segment 0001                  __Lparam 0000  
+           __psmallconst 1000                  __pcinit 124A          __size_of_button 0052  
+             _init_ports 11D6                  __ramtop 1000                  __ptext0 10EE  
+                __ptext1 1202                  __ptext2 1226                  __ptext3 1262  
+                __ptext4 100E                  __ptext5 11D6                  __ptext6 1274  
+                __ptext7 1184          __size_of_outlet 0024          __size_of_status 00E0  
+   end_of_initialization 1258               ??_init_adc 0008            __Lmediumconst 0000  
+                postinc0 000FEE                _PORTAbits 000F80                _PORTBbits 000F81  
+              _PORTCbits 000F82                _PORTDbits 000F83                _PORTEbits 000F84  
+            ?_init_ports 0008           __end_of_button 11D6           __end_of_outlet 1226  
+         __end_of_status 10EE      start_initialization 124A               button@push 0009  
+               ??_button 0008                 ??_outlet 0009                 ??_status 0008  
+            __pbssCOMRAM 0001      __size_of_init_ports 002C        __size_of_init_adc 000E  
+            __smallconst 1000           __size_of_inlet 0012           __size_of_motor 0024  
+             _ADCON0bits 000FC2                main@disp1 000B                 _ColCount 0007  
+               __Hrparam 0000                 __Lrparam 0000             ??_init_ports 0008  
+               _init_adc 1274            __size_of_main 0096       __end_of_init_ports 1202  
